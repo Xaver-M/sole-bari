@@ -9,9 +9,10 @@ import { computeShadow, getOuterRings, moveOutOfBuilding } from "./shadow.js";
 const START = [41.12029, 16.85897];
 const START_ZOOM = 15;
 const LEVEL_HEIGHT = 3.2; // Meter pro Stockwerk
-const DEFAULT_HEIGHT = 16; // Standardhöhe ohne OSM-Angabe
+const DEFAULT_HEIGHT = 16; // Standardhöhe ohne jede Angabe
 const SLIDER_STEP = 10; // Minuten pro Slider-Schritt
 const COS_LAT = Math.cos((START[0] * Math.PI) / 180); // für Meter → Grad
+const DATA_URL = `${import.meta.env.BASE_URL}data/`;
 
 // Zum Testen ein anderer Tag, z. B. new Date("2027-06-21")
 // null = heute
@@ -24,6 +25,11 @@ const TYPE_LABELS = {
   ice_cream: "Eisdiele",
 };
 
+// --- Zustand der App (wird in init() befüllt) ---
+let shadowSources = []; // { ring, height } pro Gebäudeteil
+let cafes = [];
+let heightOverrides = {}; // eigene Höhenkorrekturen, Schlüssel = OSM-ID
+
 // --- Hilfsfunktionen ---
 function formatTime(date) {
   return date.toLocaleTimeString("de-DE", {
@@ -32,11 +38,34 @@ function formatTime(date) {
   });
 }
 
-function getHeight(props) {
-  if (props.height) return parseFloat(props.height);
+function getBuildingId(feature) {
+  return feature.id ?? feature.properties["@id"];
+}
+
+// Höhe eines Gebäudes + woher der Wert stammt
+// Rangfolge: eigene Korrektur → OSM height → OSM Stockwerke → KI-Höhe → Standardwert
+function getHeightInfo(feature) {
+  const override = heightOverrides[getBuildingId(feature)];
+  if (override?.height)
+    return { height: override.height, source: "eigene Korrektur" };
+  if (override?.levels)
+    return {
+      height: override.levels * LEVEL_HEIGHT,
+      source: "eigene Korrektur",
+    };
+
+  const props = feature.properties;
+  if (props.height)
+    return { height: parseFloat(props.height), source: "OSM (height)" };
   if (props["building:levels"])
-    return parseFloat(props["building:levels"]) * LEVEL_HEIGHT;
-  return DEFAULT_HEIGHT;
+    return {
+      height: parseFloat(props["building:levels"]) * LEVEL_HEIGHT,
+      source: "OSM (Stockwerke)",
+    };
+  if (props.ml_height)
+    return { height: props.ml_height, source: "KI-Schätzung (Microsoft)" };
+
+  return { height: DEFAULT_HEIGHT, source: "Standardwert" };
 }
 
 async function loadJSON(url) {
@@ -109,10 +138,6 @@ const shadowPolygon = L.polygon([], {
   fillRule: "nonzero",
 }).addTo(map);
 
-// --- Zustand der App (wird in init() befüllt) ---
-let shadowSources = []; // { ring, height } pro Gebäudeteil
-let cafes = [];
-
 // --- Darstellung ---
 function popupHtml(cafe) {
   const status = cafe.inShadow ? "🌥️ im Schatten" : "☀️ in der Sonne";
@@ -164,29 +189,22 @@ function renderList() {
 
 // --- Bei jeder Zeitänderung ---
 function update(date) {
-  console.time("Update gesamt");
-
   const sun = getSunPosition(date, START[0], START[1]);
   const isNight = sun.elevation <= 0;
 
   // 1. Schatten berechnen
-  console.time("1 Schatten berechnen");
   const shadows = isNight
     ? []
     : shadowSources
         .map((s) => computeShadow(s.ring, s.height, sun, COS_LAT))
         .filter(Boolean);
-  console.timeEnd("1 Schatten berechnen");
 
   // 2. Schatten zeichnen: nur Koordinaten austauschen ([lng, lat] → [lat, lng])
-  console.time("2 Schatten zeichnen");
   shadowPolygon.setLatLngs(
     shadows.map((s) => [s.ring.map(([lng, lat]) => [lat, lng])]),
   );
-  console.timeEnd("2 Schatten zeichnen");
 
   // 3. Cafés prüfen und nur bei Änderung umfärben
-  console.time("3 Cafés prüfen");
   cafes.forEach((cafe) => {
     const coords = cafe.point.geometry.coordinates;
     const wasInShadow = cafe.inShadow;
@@ -206,27 +224,24 @@ function update(date) {
       cafe.marker.setPopupContent(popupHtml(cafe));
     }
   });
-  console.timeEnd("3 Cafés prüfen");
 
   // 4. Liste und Infobox
-  console.time("4 Liste");
   renderList();
 
   document.getElementById("info").textContent =
     `☀️ Höhe ${sun.elevation.toFixed(1)}° · Richtung ${sun.azimuth.toFixed(0)}°\n` +
     `🌅 ${formatTime(times.sunrise)} · 🌇 ${formatTime(times.sunset)}`;
-  console.timeEnd("4 Liste");
-
-  console.timeEnd("Update gesamt");
 }
 
 // --- Einmal beim Start ---
 async function init() {
-  // 1. Beide Dateien parallel laden
-  const [buildingData, cafeData] = await Promise.all([
-    loadJSON(`${import.meta.env.BASE_URL}data/buildings.geojson`),
-    loadJSON(`${import.meta.env.BASE_URL}data/cafes.geojson`),
+  // 1. Alle Dateien parallel laden
+  const [buildingData, cafeData, overrides] = await Promise.all([
+    loadJSON(`${DATA_URL}buildings.geojson`),
+    loadJSON(`${DATA_URL}cafes.geojson`),
+    loadJSON(`${DATA_URL}height-overrides.json`),
   ]);
+  heightOverrides = overrides;
 
   // 2. Gebäude aufbereiten
   const buildings = buildingData.features.filter((f) =>
@@ -236,18 +251,35 @@ async function init() {
 
   // Umriss + Höhe pro Gebäudeteil einmalig vorbereiten
   shadowSources = buildings.flatMap((b) => {
-    const height = getHeight(b.properties);
+    const { height } = getHeightInfo(b);
     return getOuterRings(b).map((ring) => ({ ring, height }));
   });
+
+  // Statistik: woher kommen die Höhen (nach Anzahl und Fläche)?
+  const stats = {};
+  buildings.forEach((b) => {
+    const { source } = getHeightInfo(b);
+    stats[source] ??= { Anzahl: 0, "Fläche (ha)": 0 };
+    stats[source].Anzahl += 1;
+    stats[source]["Fläche (ha)"] += turf.area(b) / 1e4;
+  });
+  Object.values(stats).forEach((s) => {
+    s["Fläche (ha)"] = Number(s["Fläche (ha)"].toFixed(4));
+  });
+  console.table(stats);
 
   // 3. Gebäude dezent zeichnen (ändert sich nie)
   L.geoJSON(buildings, {
     style: { color: "#666", weight: 1, fillColor: "#ddd", fillOpacity: 0.6 },
     onEachFeature: (feature, layer) => {
       const props = feature.properties;
+      const { height, source } = getHeightInfo(feature);
       const levelsText = props["building:levels"] ?? "unbekannt";
       layer.bindPopup(
-        `Stockwerke: ${levelsText}<br>Angenommene Höhe: ${getHeight(props).toFixed(1)} m`,
+        `Stockwerke (OSM): ${levelsText}<br>` +
+          `Angenommene Höhe: ${height.toFixed(1)} m<br>` +
+          `Quelle: ${source}<br>` +
+          `<small>${getBuildingId(feature)}</small>`,
       );
     },
   }).addTo(map);
@@ -327,9 +359,6 @@ async function init() {
   });
 
   // 6. Start mit der aktuellen Uhrzeit
-  console.log(
-    `${buildings.length} Gebäude (${shadowSources.length} Teile), ${cafes.length} Cafés`,
-  );
   slider.value = nowMinutes();
   onTimeChange();
 }
