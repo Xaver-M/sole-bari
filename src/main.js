@@ -10,10 +10,11 @@ const START = [41.12029, 16.85897];
 const START_ZOOM = 15;
 const LEVEL_HEIGHT = 3.2; // Meter pro Stockwerk
 const DEFAULT_HEIGHT = 16; // Standardhöhe ohne OSM-Angabe
+const SLIDER_STEP = 10; // Minuten pro Slider-Schritt
 
-// Zum Testen eine feste Uhrzeit, z. B. new Date("2026-11-25T11:00:00")
-// null = aktuelle Uhrzeit
-const TEST_TIME = new Date("2026-11-25T12:00:00");
+// Zum Testen ein anderer Tag, z. B. new Date("2027-06-21")
+// null = heute
+const TEST_DATE = null;
 
 const TYPE_LABELS = {
   cafe: "Café",
@@ -42,15 +43,27 @@ async function loadJSON(url) {
   return res.json();
 }
 
-// --- Sonne ---
-const now = TEST_TIME ?? new Date();
-const sun = getSunPosition(now, START[0], START[1]);
-const times = getSunTimes(now, START[0], START[1]);
+function minutesOfDay(date) {
+  return date.getHours() * 60 + date.getMinutes();
+}
 
-document.getElementById("info").textContent =
-  `🕒 ${formatTime(now)} Uhr\n` +
-  `☀️ Höhe ${sun.elevation.toFixed(1)}° · Richtung ${sun.azimuth.toFixed(0)}°\n` +
-  `🌅 ${formatTime(times.sunrise)} · 🌇 ${formatTime(times.sunset)}`;
+function clamp(value, min, max) {
+  return Math.min(Math.max(value, min), max);
+}
+
+// --- Der Tag, um den es geht ---
+const day = TEST_DATE ? new Date(TEST_DATE) : new Date();
+day.setHours(0, 0, 0, 0); // Mitternacht
+
+const noon = new Date(day);
+noon.setHours(12);
+const times = getSunTimes(noon, START[0], START[1]);
+
+function dateFromMinutes(minutes) {
+  const date = new Date(day);
+  date.setMinutes(minutes);
+  return date;
+}
 
 // --- Karte ---
 const map = L.map("map", { preferCanvas: true }).setView(START, START_ZOOM);
@@ -66,8 +79,26 @@ map.getPane("shadows").style.zIndex = 350;
 map.getPane("shadows").style.opacity = 0.45;
 const shadowRenderer = L.canvas({ pane: "shadows" });
 
-// --- Liste links ---
-function renderList(cafes) {
+// Leere Schatten-Ebene, die bei jedem Update neu befüllt wird
+const shadowLayer = L.geoJSON(null, {
+  pane: "shadows",
+  renderer: shadowRenderer,
+  interactive: false,
+  style: { stroke: false, fillColor: "#1a1a2e", fillOpacity: 1 },
+}).addTo(map);
+
+// --- Zustand der App (wird in init() befüllt) ---
+let buildings = [];
+let cafes = [];
+
+// --- Darstellung ---
+function popupHtml(cafe) {
+  const status = cafe.inShadow ? "🌥️ im Schatten" : "☀️ in der Sonne";
+  const outdoorText = cafe.outdoor ? "<br>🪑 Außenplätze" : "";
+  return `<b>${cafe.name}</b> (${cafe.type})<br>${status}${outdoorText}`;
+}
+
+function renderList() {
   const sunny = cafes
     .filter((cafe) => !cafe.inShadow)
     .sort(
@@ -109,7 +140,46 @@ function renderList(cafes) {
   });
 }
 
-// --- Hauptablauf ---
+// --- Bei jeder Zeitänderung ---
+function update(date) {
+  console.time("Update");
+
+  const sun = getSunPosition(date, START[0], START[1]);
+  const isNight = sun.elevation <= 0;
+
+  // Schatten neu berechnen und zeichnen
+  const shadows = isNight
+    ? []
+    : buildings
+        .map((b) => computeShadow(b, getHeight(b.properties), sun))
+        .filter(Boolean);
+
+  shadowLayer.clearLayers();
+  shadowLayer.addData(shadows);
+
+  // Cafés neu prüfen und umfärben
+  cafes.forEach((cafe) => {
+    cafe.inShadow =
+      isNight ||
+      shadows.some((shadow) => turf.booleanPointInPolygon(cafe.point, shadow));
+
+    cafe.marker.setStyle({
+      color: cafe.inShadow ? "#555" : "#e69500",
+      fillColor: cafe.inShadow ? "#999" : "#ffd54f",
+    });
+    cafe.marker.setPopupContent(popupHtml(cafe));
+  });
+
+  renderList();
+
+  document.getElementById("info").textContent =
+    `☀️ Höhe ${sun.elevation.toFixed(1)}° · Richtung ${sun.azimuth.toFixed(0)}°\n` +
+    `🌅 ${formatTime(times.sunrise)} · 🌇 ${formatTime(times.sunset)}`;
+
+  console.timeEnd("Update");
+}
+
+// --- Einmal beim Start ---
 async function init() {
   // 1. Beide Dateien parallel laden
   const [buildingData, cafeData] = await Promise.all([
@@ -118,55 +188,12 @@ async function init() {
   ]);
 
   // 2. Gebäude aufbereiten
-  const buildings = buildingData.features.filter((f) =>
+  buildings = buildingData.features.filter((f) =>
     ["Polygon", "MultiPolygon"].includes(f.geometry.type),
   );
   const polygons = buildings.flatMap((b) => turf.flatten(b).features);
 
-  // 3. Schatten berechnen
-  console.time("Schattenberechnung");
-  const shadows = [];
-  buildings.forEach((building) => {
-    const shadow = computeShadow(building, getHeight(building.properties), sun);
-    if (shadow) shadows.push(shadow);
-  });
-  console.timeEnd("Schattenberechnung");
-
-  // 4. Cafés aufbereiten und prüfen
-  const isNight = sun.elevation <= 0;
-
-  const cafes = cafeData.features
-    .filter((f) => f.geometry)
-    .map((f) => {
-      const props = f.properties;
-      const center = f.geometry.type === "Point" ? f : turf.centroid(f);
-      const point = moveOutOfBuilding(
-        turf.point(center.geometry.coordinates),
-        polygons,
-      );
-
-      const inShadow =
-        isNight ||
-        shadows.some((shadow) => turf.booleanPointInPolygon(point, shadow));
-
-      return {
-        name: props.name ?? "Unbenannt",
-        type: TYPE_LABELS[props.amenity] ?? props.amenity,
-        outdoor: props.outdoor_seating === "yes",
-        point,
-        inShadow,
-      };
-    });
-
-  // 5. Schatten zeichnen
-  L.geoJSON(turf.featureCollection(shadows), {
-    pane: "shadows",
-    renderer: shadowRenderer,
-    interactive: false,
-    style: { stroke: false, fillColor: "#1a1a2e", fillOpacity: 1 },
-  }).addTo(map);
-
-  // 6. Gebäude dezent darüber zeichnen
+  // 3. Gebäude dezent zeichnen (ändert sich nie)
   L.geoJSON(buildings, {
     style: { color: "#666", weight: 1, fillColor: "#ddd", fillOpacity: 0.6 },
     onEachFeature: (feature, layer) => {
@@ -178,29 +205,83 @@ async function init() {
     },
   }).addTo(map);
 
-  // 7. Cafés zeichnen und Marker am Café-Objekt merken
-  cafes.forEach((cafe) => {
-    const [lng, lat] = cafe.point.geometry.coordinates;
+  // 4. Cafés aufbereiten (Position ändert sich nie) und Marker erzeugen
+  cafes = cafeData.features
+    .filter((f) => f.geometry)
+    .map((f) => {
+      const props = f.properties;
+      const center = f.geometry.type === "Point" ? f : turf.centroid(f);
+      const point = moveOutOfBuilding(
+        turf.point(center.geometry.coordinates),
+        polygons,
+      );
+      const [lng, lat] = point.geometry.coordinates;
 
-    const color = cafe.inShadow ? "#555" : "#e69500";
-    const fillColor = cafe.inShadow ? "#999" : "#ffd54f";
-    const status = cafe.inShadow ? "🌥️ im Schatten" : "☀️ in der Sonne";
-    const outdoorText = cafe.outdoor ? "<br>🪑 Außenplätze" : "";
+      const cafe = {
+        name: props.name ?? "Unbenannt",
+        type: TYPE_LABELS[props.amenity] ?? props.amenity,
+        outdoor: props.outdoor_seating === "yes",
+        point,
+        inShadow: false,
+      };
 
-    cafe.marker = L.circleMarker([lat, lng], {
-      radius: 4,
-      color,
-      fillColor,
-      fillOpacity: 0.6,
-    })
-      .bindPopup(
-        `<b>${cafe.name}</b> (${cafe.type})<br>${status}${outdoorText}`,
-      )
-      .addTo(map);
+      cafe.marker = L.circleMarker([lat, lng], {
+        radius: 4,
+        color: "#999",
+        fillColor: "#ddd",
+        fillOpacity: 0.6,
+      })
+        .bindPopup(popupHtml(cafe))
+        .addTo(map);
+
+      return cafe;
+    });
+
+  // 5. Slider einrichten: von Sonnenaufgang bis Sonnenuntergang
+  const slider = document.getElementById("time-slider");
+  const timeLabel = document.getElementById("time-label");
+  const nowBtn = document.getElementById("now-btn");
+
+  const minMinutes =
+    Math.ceil(minutesOfDay(times.sunrise) / SLIDER_STEP) * SLIDER_STEP;
+  const maxMinutes =
+    Math.floor(minutesOfDay(times.sunset) / SLIDER_STEP) * SLIDER_STEP;
+
+  slider.min = minMinutes;
+  slider.max = maxMinutes;
+  slider.step = SLIDER_STEP;
+
+  function nowMinutes() {
+    const rounded =
+      Math.round(minutesOfDay(new Date()) / SLIDER_STEP) * SLIDER_STEP;
+    return clamp(rounded, minMinutes, maxMinutes);
+  }
+
+  // Updates bündeln: höchstens eins pro Bildschirm-Frame
+  let updateScheduled = false;
+
+  function onTimeChange() {
+    const date = dateFromMinutes(Number(slider.value));
+    timeLabel.textContent = formatTime(date);
+
+    if (updateScheduled) return;
+    updateScheduled = true;
+    requestAnimationFrame(() => {
+      updateScheduled = false;
+      update(dateFromMinutes(Number(slider.value)));
+    });
+  }
+
+  slider.addEventListener("input", onTimeChange);
+
+  nowBtn.addEventListener("click", () => {
+    slider.value = nowMinutes();
+    onTimeChange();
   });
 
-  // 8. Liste füllen
-  renderList(cafes);
+  // 6. Start mit der aktuellen Uhrzeit
+  slider.value = nowMinutes();
+  onTimeChange();
 }
 
 init();

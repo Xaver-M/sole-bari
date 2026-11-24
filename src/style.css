@@ -93,3 +93,35 @@ h2 {
     border-top: 1px solid #ddd;
   }
 }
+
+/* --- Zeit-Slider --- */
+#time-control {
+  margin-top: 16px;
+  padding: 12px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+#time-control label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#time-slider {
+  width: 100%;
+  accent-color: #e69500;
+}
+
+#now-btn {
+  margin-top: 8px;
+  padding: 6px 12px;
+  border: 1px solid #e69500;
+  border-radius: 6px;
+  background: #fff3c4;
+  cursor: pointer;
+}
+
+#now-btn:hover {
+  background: #ffe28a;
+}
