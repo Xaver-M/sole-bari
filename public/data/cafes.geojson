@@ -1,0 +1,4577 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-11-24T13:55:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/264766312",
+      "properties": {
+        "@id": "way/264766312",
+        "amenity": "bar",
+        "building": "retail",
+        "name": "El Chiringuito",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8742224,
+          41.1258928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/264871315",
+      "properties": {
+        "@id": "way/264871315",
+        "addr:street": "Piazza Giuseppe Garibaldi",
+        "amenity": "cafe",
+        "building": "yes",
+        "internet_access": "no",
+        "name": "Chiosco Garibaldi",
+        "smoking": "outside",
+        "wheelchair": "no",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8616432,
+          41.125781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/355380441",
+      "properties": {
+        "@id": "node/355380441",
+        "addr:city": "Bari",
+        "addr:street": "Largo Ignazio Ciaia",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8729563,
+          41.1150636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/355381298",
+      "properties": {
+        "@id": "node/355381298",
+        "amenity": "cafe",
+        "name": "Nineli Caffè",
+        "operator": "Biscardi Tommaso",
+        "phone": "+39 389 1904207"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8724899,
+          41.1157215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/355381513",
+      "properties": {
+        "@id": "node/355381513",
+        "amenity": "cafe",
+        "created_by": "Potlatch 0.10f",
+        "name": "Brasserie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8706075,
+          41.1168191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/355381551",
+      "properties": {
+        "@id": "node/355381551",
+        "amenity": "cafe",
+        "name": "Gianton Bar",
+        "opening_hours": "Mo-Fr 05:00-18:30; Sa 05:00-13:30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8719666,
+          41.1167908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/355381784",
+      "properties": {
+        "@id": "node/355381784",
+        "amenity": "cafe",
+        "name": "Bar Gambrinus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8723823,
+          41.116415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/355861074",
+      "properties": {
+        "@id": "node/355861074",
+        "addr:street": "Piazza Aldo Moro",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2024-10-17",
+        "name": "C House Bakery Café",
+        "opening_hours": "Mo-Sa 06:00-19:00; Su 07:00-19:00",
+        "operator": "C House",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "smoking": "no",
+        "survey:date": "2024-10-25",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8697059,
+          41.1179176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/356053230",
+      "properties": {
+        "@id": "node/356053230",
+        "amenity": "cafe",
+        "check_date": "2026-10-07",
+        "name": "Bar Bari Nord"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8690945,
+          41.1183307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/356060871",
+      "properties": {
+        "@id": "node/356060871",
+        "addr:city": "Bari",
+        "addr:housenumber": "24",
+        "addr:place": "Piazza Aldo Moro",
+        "addr:postcode": "70122",
+        "amenity": "cafe",
+        "check_date": "2025-12-08",
+        "name": "Gran Caffé Catullo",
+        "operator": "A&QZ S.r.l.s.",
+        "phone": "+39 080 5210244",
+        "ref:vatin": "IT07409120727"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.871027,
+          41.1190185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/370012053",
+      "properties": {
+        "@id": "way/370012053",
+        "addr:city": "Bari",
+        "addr:postcode": "70123",
+        "addr:street": "Via Pietro Ravanas",
+        "amenity": "bar",
+        "name": "Bar Marvulli",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8586886,
+          41.118766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/381538850",
+      "properties": {
+        "@id": "node/381538850",
+        "addr:city": "Bari",
+        "addr:housenumber": "3",
+        "addr:postcode": "70122",
+        "addr:street": "Piazza del Ferrarese",
+        "amenity": "cafe",
+        "bar": "yes",
+        "check_date": "2024-12-28",
+        "cuisine": "mediterranean;italian",
+        "indoor_seating": "yes",
+        "name": "Caffè Barucchelli",
+        "operator": "Roberto Vergari",
+        "outdoor_seating": "yes",
+        "outdoor_seating:comfort": "weather_protection",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "source": "survey",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8717079,
+          41.1268934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/399105451",
+      "properties": {
+        "@id": "node/399105451",
+        "amenity": "bar",
+        "name": "Città vecchia",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8714124,
+          41.1278135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/416497162",
+      "properties": {
+        "@id": "way/416497162",
+        "addr:street": "Via Giuseppe Sangiorgi",
+        "amenity": "cafe",
+        "building": "yes",
+        "cuisine": "coffee_shop;italian",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8500139,
+          41.1138623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/702929834",
+      "properties": {
+        "@id": "node/702929834",
+        "addr:housenumber": "51,53",
+        "addr:postcode": "70124",
+        "addr:street": "Viale Unità d'Italia",
+        "amenity": "cafe",
+        "name": "Catullo il Fondatore",
+        "operator": "GEPA s.r.l.",
+        "phone": "+39 080 5565766"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8730931,
+          41.1147165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1143446607",
+      "properties": {
+        "@id": "node/1143446607",
+        "amenity": "cafe",
+        "name": "Bar Tolesco",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8672357,
+          41.121313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1211820728",
+      "properties": {
+        "@id": "node/1211820728",
+        "amenity": "cafe",
+        "name": "Bar Olimpia",
+        "opening_hours": "Mo-Fr 06:30-20:00; Sa,Su 06:30-13:30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.882098,
+          41.119508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1271275963",
+      "properties": {
+        "@id": "way/1271275963",
+        "addr:city": "Bari",
+        "addr:postcode": "70121",
+        "addr:street": "Piazza Umberto Primo",
+        "amenity": "cafe",
+        "building": "yes",
+        "indoor_seating": "no",
+        "name": "IL cHiOsCo",
+        "outdoor_seating": "no",
+        "takeaway": "only",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8699718,
+          41.1210047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1339447940",
+      "properties": {
+        "@id": "node/1339447940",
+        "addr:city": "Bari",
+        "addr:housenumber": "3",
+        "addr:postcode": "70122",
+        "addr:street": "Piazza Mercantile",
+        "amenity": "ice_cream",
+        "email": "info@gelateriasandrino.it",
+        "name": "Sandrino",
+        "ref:vatin": "02625490749",
+        "website": "https://www.gelateriesandrino.it/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8715415,
+          41.1274867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1483634361",
+      "properties": {
+        "@id": "node/1483634361",
+        "addr:street": "Via Giuseppe Albanese",
+        "amenity": "pub",
+        "internet_access": "wlan",
+        "name": "Tropicana Caribbean Pub"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8618772,
+          41.1161123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1611643605",
+      "properties": {
+        "@id": "node/1611643605",
+        "amenity": "pub",
+        "name": "Taverna Vecchia del Maltese",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8524108,
+          41.1227294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1668430326",
+      "properties": {
+        "@id": "node/1668430326",
+        "amenity": "pub",
+        "name": "Bourbon Street",
+        "operator": "Nicola Pignataro",
+        "smoking": "separated"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8643811,
+          41.1165341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1690133870",
+      "properties": {
+        "@id": "node/1690133870",
+        "amenity": "pub",
+        "disused:amenity": "pub",
+        "end": "2015",
+        "name": "Flying Circus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8714511,
+          41.1291451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1961127027",
+      "properties": {
+        "@id": "node/1961127027",
+        "addr:city": "Bari",
+        "addr:postcode": "70121",
+        "addr:street": "Via Domenico Nicolai",
+        "amenity": "cafe",
+        "cuisine": "ice_cream;coffee_shop",
+        "name": "Bar Ateneo",
+        "operator": "Angelo Alizzi",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8684867,
+          41.1211126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/1961127045",
+      "properties": {
+        "@id": "node/1961127045",
+        "addr:city": "Bari",
+        "addr:housenumber": "146",
+        "addr:postcode": "70121",
+        "addr:street": "Via Roberto da Bari",
+        "amenity": "cafe",
+        "cuisine": "japanese;bistro;sushi;takoyaki",
+        "delivery": "yes",
+        "drive_through": "no",
+        "name": "Hagakure Momi",
+        "opening_hours": "Mo-Sa 12:00-23:00; Su 12:00-15:00, 19:00-23:00",
+        "outdoor_seating": "yes",
+        "reservation": "yes",
+        "website": "https://hagakuremomi.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8684744,
+          41.1216734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2119274218",
+      "properties": {
+        "@id": "node/2119274218",
+        "amenity": "bar",
+        "name": "Caffè Nero",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8716204,
+          41.1267687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2335104810",
+      "properties": {
+        "@id": "node/2335104810",
+        "addr:city": "Bari",
+        "addr:housenumber": "89",
+        "addr:postcode": "70122",
+        "addr:street": "Corso Vittorio Emanuele Secondo",
+        "amenity": "cafe",
+        "check_date": "2025-03-22",
+        "cuisine": "coffee_shop;ice_cream;regional",
+        "indoor_seating": "yes",
+        "name": "Gelateria Caffetteria Re Vittorio",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8691548,
+          41.1263307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2660984271",
+      "properties": {
+        "@id": "node/2660984271",
+        "addr:city": "Bari",
+        "amenity": "bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8757748,
+          41.1137292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2690990382",
+      "properties": {
+        "@id": "node/2690990382",
+        "addr:street": "Via Giuseppe Re David",
+        "amenity": "cafe",
+        "check_date": "2024-12-16",
+        "name": "Diamond's"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8750577,
+          41.1150733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2705629122",
+      "properties": {
+        "@id": "node/2705629122",
+        "amenity": "cafe",
+        "check_date": "2024-12-21",
+        "name": "Bar Lucy",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8766497,
+          41.113739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/2792744324",
+      "properties": {
+        "@id": "node/2792744324",
+        "amenity": "cafe",
+        "name": "Nero Perla Cafe'",
+        "operator": "F.lli Stramaglia s.n.c.",
+        "phone": "+39 0802021632"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8538589,
+          41.1167342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3105981700",
+      "properties": {
+        "@id": "node/3105981700",
+        "addr:city": "Bari",
+        "addr:housenumber": "40",
+        "addr:postcode": "70122",
+        "addr:street": "Via Scipione Crisanzio",
+        "amenity": "cafe",
+        "name": "Caffé Fortunato"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8676128,
+          41.1196555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3105981703",
+      "properties": {
+        "@id": "node/3105981703",
+        "addr:city": "Bari",
+        "addr:housenumber": "2",
+        "addr:postcode": "70122",
+        "addr:street": "Via Scipione Crisanzio",
+        "amenity": "cafe",
+        "check_date": "2025-03-24",
+        "cuisine": "coffee_shop;dessert",
+        "indoor_seating": "yes",
+        "name": "Caricola",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8690281,
+          41.1197417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3105989511",
+      "properties": {
+        "@id": "node/3105989511",
+        "alt_name": "Taverna Nuova",
+        "amenity": "pub",
+        "check_date": "2024-12-23",
+        "level": "0",
+        "name": "La Taverna del Maltese"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8663622,
+          41.1212599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3106006542",
+      "properties": {
+        "@id": "node/3106006542",
+        "addr:city": "Bari",
+        "addr:housenumber": "8",
+        "addr:postcode": "70125",
+        "addr:street": "Via Francesco Muciaccia",
+        "amenity": "pub",
+        "name": "Blu eyes",
+        "opening_hours": "Mo-Sa 12:30-15:30,20:00-00:00; Tu off; Su 12:30-15:30,20:00-24:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8743534,
+          41.1150131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3116380714",
+      "properties": {
+        "@id": "node/3116380714",
+        "amenity": "cafe",
+        "name": "Mavi bistrot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8684778,
+          41.1165321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3180477431",
+      "properties": {
+        "@id": "node/3180477431",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8668559,
+          41.1323878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3180477438",
+      "properties": {
+        "@id": "node/3180477438",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8496507,
+          41.1326226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3480975674",
+      "properties": {
+        "@id": "node/3480975674",
+        "amenity": "bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8769715,
+          41.1233233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3480990601",
+      "properties": {
+        "@id": "node/3480990601",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8793631,
+          41.1175081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3736237796",
+      "properties": {
+        "@id": "node/3736237796",
+        "addr:street": "Via Francesco Crispi",
+        "amenity": "cafe",
+        "name": "Full Coffee Time"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8573512,
+          41.1239691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3736237810",
+      "properties": {
+        "@id": "node/3736237810",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8572955,
+          41.1241378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3769219075",
+      "properties": {
+        "@id": "node/3769219075",
+        "addr:city": "Bari",
+        "addr:housename": "Palazzo di Cittá",
+        "addr:housenumber": "84",
+        "addr:postcode": "70122",
+        "addr:street": "Corso Vittorio Emanuele",
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "bar": "yes",
+        "capacity": "20",
+        "changing_table": "no",
+        "check_date": "2025-03-22",
+        "cuisine": "coffee_shop",
+        "delivery": "no",
+        "highchair": "no",
+        "indoor_seating": "yes",
+        "internet_access": "no",
+        "level": "0",
+        "name": "Bar Municipio",
+        "official_name": "Bar Municipio di Matteo Laraspata",
+        "operator": "Matteo Laraspata",
+        "outdoor_seating": "no",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "reservation": "no",
+        "self_service": "no",
+        "takeaway": "yes",
+        "toilets": "no",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8678681,
+          41.1256098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3769220720",
+      "properties": {
+        "@id": "node/3769220720",
+        "addr:city": "Bari",
+        "addr:housenumber": "80",
+        "addr:postcode": "70122",
+        "addr:street": "Corso Vittorio Emanuele Secondo",
+        "amenity": "cafe",
+        "cuisine": "breakfast;coffee_shop",
+        "email": "info@tamtambar.it",
+        "indoor_seating": "yes",
+        "name": "Tam Tam",
+        "operator": "Arcangelo Filograno",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "website": "https://www.tamtambar.it/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.868089,
+          41.1258258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3803577357",
+      "properties": {
+        "@id": "node/3803577357",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8676862,
+          41.1187661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3837103975",
+      "properties": {
+        "@id": "node/3837103975",
+        "addr:city": "Bari",
+        "addr:housenumber": "140e",
+        "addr:postcode": "70121",
+        "addr:street": "Corso Sidney Sonnino",
+        "amenity": "cafe",
+        "name": "Caffè Perulli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8846091,
+          41.1185007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3878195743",
+      "properties": {
+        "@id": "node/3878195743",
+        "addr:housenumber": "8a",
+        "addr:postcode": "70124",
+        "addr:street": "Viale Antonio Salandra",
+        "amenity": "pub",
+        "name": "Noise",
+        "operator": "Antonio Marzio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8646588,
+          41.1158465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3961620519",
+      "properties": {
+        "@id": "node/3961620519",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "outdoor_seating": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.872306,
+          41.1282022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/3961620520",
+      "properties": {
+        "@id": "node/3961620520",
+        "amenity": "bar",
+        "check_date": "2023-12-24",
+        "indoor_seating": "yes",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "toilets": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8723274,
+          41.128285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4149376889",
+      "properties": {
+        "@id": "node/4149376889",
+        "addr:housenumber": "21",
+        "addr:postcode": "70124",
+        "addr:street": "Via Luigi Ricchioni",
+        "amenity": "bar",
+        "name": "Katharos Café",
+        "operator": "Caterina Roselli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8686288,
+          41.1147242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4186840906",
+      "properties": {
+        "@id": "node/4186840906",
+        "addr:city": "Bari",
+        "addr:housenumber": "19",
+        "addr:postcode": "70121",
+        "addr:street": "Via Salvatore Cognetti",
+        "amenity": "cafe",
+        "name": "Caffé Cognetti",
+        "website": "https://www.caffecognetti.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8731996,
+          41.1231035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4367918274",
+      "properties": {
+        "@id": "node/4367918274",
+        "amenity": "cafe",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8595567,
+          41.1253011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4554264488",
+      "properties": {
+        "@id": "node/4554264488",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8646867,
+          41.1178794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4563692597",
+      "properties": {
+        "@id": "node/4563692597",
+        "addr:housenumber": "1",
+        "addr:street": "Viale Ennio Quinto",
+        "amenity": "cafe",
+        "name": "Dipierro Caffetteria",
+        "name:it": "Dipierro Caffetteria",
+        "phone": "+39 329 922 2043"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8625482,
+          41.1164573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4568498929",
+      "properties": {
+        "@id": "node/4568498929",
+        "addr:city": "Bari",
+        "addr:street": "Piazza Aldo Moro",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "FAL Café"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8690464,
+          41.1185568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4602851163",
+      "properties": {
+        "@id": "node/4602851163",
+        "addr:city": "Bari",
+        "addr:housenumber": "19D",
+        "addr:postcode": "70123",
+        "addr:street": "Corso Italia",
+        "amenity": "cafe",
+        "name": "Gaudì Caffè",
+        "operator": "Mario De Carolis",
+        "outdoor_seating": "yes",
+        "phone": "+39 3476224264",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8678322,
+          41.1186722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4887299644",
+      "properties": {
+        "@id": "node/4887299644",
+        "addr:city": "Bari",
+        "addr:housenumber": "27",
+        "addr:postcode": "70121",
+        "addr:street": "Largo Adua",
+        "amenity": "bar",
+        "name": "Amarcord Cafè"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8766392,
+          41.1233206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/4963527123",
+      "properties": {
+        "@id": "node/4963527123",
+        "addr:city": "Bari",
+        "addr:housenumber": "16",
+        "addr:postcode": "70122",
+        "addr:street": "Via Venezia",
+        "amenity": "bar",
+        "brewery": "various",
+        "check_date": "2025-12-27",
+        "loc_name": "La Ciclatera",
+        "name": "La ciclatera sotto il mare",
+        "operator": "Roberto De Benedictis & C. s.a.s.",
+        "outdoor_seating": "yes",
+        "outdoor_seating:comfort": "weather_protection",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "smoking": "outside",
+        "toilets": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.873025,
+          41.128039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5014577580",
+      "properties": {
+        "@id": "node/5014577580",
+        "addr:city": "Bari",
+        "addr:housenumber": "189",
+        "addr:postcode": "70122",
+        "addr:street": "Via de Rossi",
+        "amenity": "cafe",
+        "diet:vegetarian": "yes",
+        "name": "Vintage Cafè"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8655783,
+          41.1203157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5016571681",
+      "properties": {
+        "@id": "node/5016571681",
+        "amenity": "cafe",
+        "diet:vegetarian": "yes",
+        "name": "Caffetteria dell'angolo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8658029,
+          41.1204639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5016571682",
+      "properties": {
+        "@id": "node/5016571682",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8655757,
+          41.1204634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5016571696",
+      "properties": {
+        "@id": "node/5016571696",
+        "addr:street": "Via de Rossi",
+        "amenity": "cafe",
+        "check_date": "2026-10-28",
+        "cuisine": "italian",
+        "diet:vegan": "yes",
+        "name": "Il Dolcetto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8657304,
+          41.1213153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5045188128",
+      "properties": {
+        "@id": "node/5045188128",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2022-08-02",
+        "name": "Caffetteria Vanny e Mary",
+        "name:en": "Caffetteria Vanny e Mary",
+        "name:it": "Caffetteria Vanny e Mary",
+        "opening_hours:signed": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8679317,
+          41.1285419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5045188129",
+      "properties": {
+        "@id": "node/5045188129",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Tavli Cafe",
+        "name:en": "Tavli Cafe",
+        "name:it": "Tavli Cafe",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8695879,
+          41.1270854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5045188130",
+      "properties": {
+        "@id": "node/5045188130",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Caffetteria Cervezeria De La Plaza",
+        "name:en": "Caffetteria Cervezeria De La Plaza",
+        "name:it": "Caffetteria Cervezeria De La Plaza",
+        "outdoor_seating": "yes",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8687121,
+          41.1287721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5045210624",
+      "properties": {
+        "@id": "node/5045210624",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Bar San Nicola",
+        "name:en": "Bar San Nicola",
+        "name:it": "Bar San Nicola",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8694066,
+          41.1305886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5047454327",
+      "properties": {
+        "@id": "node/5047454327",
+        "addr:city": "Bari",
+        "addr:housenumber": "8A",
+        "addr:postcode": "70122",
+        "addr:street": "Via Raffaele de Cesare",
+        "amenity": "cafe",
+        "cuisine": "breakfast;cake;coffee_shop",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "laptop": "yes",
+        "name": "Avamposto",
+        "outdoor_seating": "no",
+        "website": "http://www.avamposto.net"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8692962,
+          41.119595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5053288821",
+      "properties": {
+        "@id": "node/5053288821",
+        "amenity": "cafe",
+        "cuisine": "italian_pizza",
+        "name": "Miramare",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8721362,
+          41.1290735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5092469027",
+      "properties": {
+        "@id": "node/5092469027",
+        "addr:street": "Piazza Mercantile",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Mercantile nove",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8713935,
+          41.1275462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5092507121",
+      "properties": {
+        "@id": "node/5092507121",
+        "addr:housenumber": "5",
+        "addr:street": "Piazza Mercantile",
+        "amenity": "bar",
+        "name": "Voglia Di Pane e Vino",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8714796,
+          41.1274695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5376110743",
+      "properties": {
+        "@id": "node/5376110743",
+        "addr:housenumber": "158",
+        "addr:street": "Via Alessandro Manzoni",
+        "amenity": "cafe",
+        "name": "bar 900"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8613524,
+          41.1209668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5383367917",
+      "properties": {
+        "@id": "node/5383367917",
+        "amenity": "cafe",
+        "fixme": "name, etc.",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8605637,
+          41.126713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5405356629",
+      "properties": {
+        "@id": "node/5405356629",
+        "addr:housenumber": "31",
+        "addr:street": "Via Domenico Nicolai",
+        "amenity": "cafe",
+        "contact:facebook": "https://www.facebook.com/sidneycaffebari/",
+        "name": "Sidney Caffe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8677512,
+          41.1213433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5412174455",
+      "properties": {
+        "@id": "node/5412174455",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8643311,
+          41.1180104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5504746321",
+      "properties": {
+        "@id": "node/5504746321",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8730417,
+          41.1155434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5647233129",
+      "properties": {
+        "@id": "node/5647233129",
+        "amenity": "cafe",
+        "name": "Caffè L'arabica",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8596326,
+          41.1268116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5647300521",
+      "properties": {
+        "@id": "node/5647300521",
+        "amenity": "cafe",
+        "name": "New Bar",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8608235,
+          41.1261274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5647318421",
+      "properties": {
+        "@id": "node/5647318421",
+        "amenity": "cafe",
+        "name": "Antica Pasticceria del Liceo",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.860589,
+          41.126822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5647351223",
+      "properties": {
+        "@id": "node/5647351223",
+        "addr:city": "Bari",
+        "addr:housenumber": "27",
+        "addr:postcode": "70122",
+        "addr:street": "Via Giosuè Carducci",
+        "amenity": "cafe",
+        "name": "Carducci Caffè",
+        "phone": "+39 0805235396",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8640095,
+          41.1273968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5647433821",
+      "properties": {
+        "@id": "node/5647433821",
+        "addr:city": "Bari",
+        "addr:housenumber": "259",
+        "addr:postcode": "70122",
+        "addr:street": "Via Abate Giacinto Gimma",
+        "amenity": "cafe",
+        "name": "Gran Caffè IN",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8614077,
+          41.1242864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5647436322",
+      "properties": {
+        "@id": "node/5647436322",
+        "addr:city": "Bari",
+        "addr:country": "IT",
+        "addr:housenumber": "164",
+        "addr:street": "Via Abate Giacinto Gimma",
+        "amenity": "bar",
+        "contact:website": "https://www.leggimenu.it/menu/mosaicbari",
+        "name": "Mosaic Urban Beer Art",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8647175,
+          41.1243106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5647440021",
+      "properties": {
+        "@id": "node/5647440021",
+        "addr:city": "Bari",
+        "addr:housenumber": "25",
+        "addr:postcode": "70122",
+        "addr:street": "Via Sagarriga Visconti",
+        "amenity": "cafe",
+        "name": "Visconti 25",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8629372,
+          41.1241845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5647451621",
+      "properties": {
+        "@id": "node/5647451621",
+        "amenity": "cafe",
+        "name": "B-5 Caffè & bistrot",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8650865,
+          41.1254079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5666387471",
+      "properties": {
+        "@id": "node/5666387471",
+        "addr:city": "Bari",
+        "addr:housenumber": "135",
+        "addr:postcode": "70121",
+        "addr:street": "Corso Cavour",
+        "amenity": "cafe",
+        "name": "Caffè Cavour"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8722731,
+          41.1218206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5666387476",
+      "properties": {
+        "@id": "node/5666387476",
+        "addr:city": "Bari",
+        "addr:housenumber": "121",
+        "addr:postcode": "70121",
+        "addr:street": "Corso Cavour",
+        "amenity": "cafe",
+        "name": "La Madia - Gran Caffè Saicaf",
+        "phone": "+39 0808178414",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8722248,
+          41.1222636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5666387509",
+      "properties": {
+        "@id": "node/5666387509",
+        "addr:city": "Bari",
+        "addr:housenumber": "49",
+        "addr:postcode": "70121",
+        "addr:street": "Corso Cavour",
+        "amenity": "cafe",
+        "name": "Café Lucarelli",
+        "phone": "+39 0805232874",
+        "website": "https://cafelucarelli.it/cafe-lucarelli-corso-cavour/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8719584,
+          41.1245577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5666387728",
+      "properties": {
+        "@id": "node/5666387728",
+        "addr:city": "Bari",
+        "addr:housenumber": "9",
+        "addr:postcode": "70122",
+        "addr:street": "Corso Cavour",
+        "amenity": "ice_cream",
+        "email": "epiko2023@gmail.com",
+        "name": "Epiko",
+        "outdoor_seating": "yes",
+        "phone": "+39 3889823052",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8718131,
+          41.1258628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5666387802",
+      "properties": {
+        "@id": "node/5666387802",
+        "addr:city": "Bari",
+        "addr:country": "IT",
+        "addr:housenumber": "138",
+        "addr:place": "Bari",
+        "addr:postcode": "70121",
+        "addr:street": "Corso Cavour",
+        "amenity": "cafe",
+        "name": "Caffetteria Cavour",
+        "opening_hours": "04:00-19:30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8728425,
+          41.1198823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5666388136",
+      "properties": {
+        "@id": "node/5666388136",
+        "addr:city": "Bari",
+        "addr:country": "IT",
+        "addr:housenumber": "206",
+        "addr:place": "Bari",
+        "addr:postcode": "70121",
+        "addr:street": "Corso Cavour",
+        "amenity": "cafe",
+        "check_date": "2026-10-07",
+        "name": "Caffetteria Medici",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8730296,
+          41.1182672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5760282999",
+      "properties": {
+        "@id": "node/5760282999",
+        "addr:city": "Bari",
+        "addr:housenumber": "11",
+        "addr:postcode": "70122",
+        "addr:street": "Via San Francesco d'Assisi",
+        "amenity": "cafe",
+        "internet_access": "yes",
+        "name": "Caffè D'Arte",
+        "phone": "+39 0805289368",
+        "website": "https://caffedarte.eatbu.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.865289,
+          41.1272394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5760287045",
+      "properties": {
+        "@id": "node/5760287045",
+        "addr:city": "Bari",
+        "addr:housenumber": "135",
+        "addr:postcode": "70122",
+        "addr:street": "Corso Vittorio Emanuele Secondo",
+        "amenity": "cafe",
+        "name": "Claus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8660311,
+          41.1259817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5760292933",
+      "properties": {
+        "@id": "node/5760292933",
+        "addr:city": "Bari",
+        "addr:housenumber": "122",
+        "addr:postcode": "70122",
+        "addr:street": "Corso Vittorio Emanuele Secondo",
+        "amenity": "cafe",
+        "name": "Caffè Borghese",
+        "opening_hours": "Tu-Su 08:00-24:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8650654,
+          41.1256327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5869280385",
+      "properties": {
+        "@id": "node/5869280385",
+        "amenity": "pub",
+        "brewery": "Guinness",
+        "name": "Joy's Shop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8831116,
+          41.1190728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/5885282185",
+      "properties": {
+        "@id": "node/5885282185",
+        "amenity": "cafe",
+        "name": "Osteria Cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8714208,
+          41.1291955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6044688794",
+      "properties": {
+        "@id": "node/6044688794",
+        "addr:city": "Bari",
+        "addr:country": "IT",
+        "addr:housenumber": "148",
+        "addr:postcode": "70122",
+        "addr:street": "Via Niccolò Piccinni",
+        "amenity": "pub",
+        "name": "1986 Pubsteria Pugliese"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8659798,
+          41.1250352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6154064714",
+      "properties": {
+        "@id": "node/6154064714",
+        "addr:city": "Bari",
+        "addr:housenumber": "59",
+        "addr:postcode": "70121",
+        "addr:street": "Via Salvatore Cognetti",
+        "amenity": "bar",
+        "brewery": "yes",
+        "contact:facebook": "https://www.facebook.com/p/Piccolo-BAR-100063555164740/",
+        "name": "Piccolo Bar",
+        "opening_hours": "Mo-Fr 07:00-00:00; Sa-Su 08:00-00:00",
+        "operator": "Piccolo bar",
+        "outdoor_seating": "no",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8757068,
+          41.1232622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6583560487",
+      "properties": {
+        "@id": "node/6583560487",
+        "amenity": "bar",
+        "cuisine": "italian",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "VEGAS",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8712277,
+          41.1266557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6592965305",
+      "properties": {
+        "@id": "node/6592965305",
+        "addr:street": "Piazza Mercantile",
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "check_date": "2024-09-05",
+        "cuisine": "regional;italian;ice_cream",
+        "indoor_seating": "yes",
+        "name": "Martinucci",
+        "name:it": "Martinucci",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.871926,
+          41.1279116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6656178117",
+      "properties": {
+        "@id": "node/6656178117",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8683804,
+          41.1287266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6656178373",
+      "properties": {
+        "@id": "node/6656178373",
+        "amenity": "bar",
+        "cuisine": "italian_pizza",
+        "indoor_seating": "yes",
+        "name": "Titti Twister",
+        "outdoor_seating": "yes",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.86907,
+          41.1324353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6656178382",
+      "properties": {
+        "@id": "node/6656178382",
+        "amenity": "cafe",
+        "name:en": "Antica Tabaccheria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8692625,
+          41.1304085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6656178384",
+      "properties": {
+        "@id": "node/6656178384",
+        "amenity": "cafe",
+        "indoor_seating": "no",
+        "name": "L'Allegrezza",
+        "outdoor_seating": "yes",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8692844,
+          41.1302711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6656178539",
+      "properties": {
+        "@id": "node/6656178539",
+        "amenity": "bar",
+        "brewery": "yes",
+        "check_date": "2024-06-17",
+        "indoor_seating": "yes",
+        "name": "De la Plaza",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "source": "survey",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8689447,
+          41.1288058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6656188387",
+      "properties": {
+        "@id": "node/6656188387",
+        "amenity": "bar",
+        "name": "Cololla"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8692184,
+          41.1295924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6656188388",
+      "properties": {
+        "@id": "node/6656188388",
+        "amenity": "cafe",
+        "check_date": "2023-12-29",
+        "indoor_seating": "yes",
+        "name": "Antico Café del Carmine 1931",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8691418,
+          41.1291414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6753110985",
+      "properties": {
+        "@id": "node/6753110985",
+        "addr:housenumber": "5",
+        "addr:postcode": "70121",
+        "addr:street": "Lungomare Araldo di Crollalanza",
+        "amenity": "cafe",
+        "check_date": "2026-05-15",
+        "name": "Pescobar",
+        "opening_hours": "12:00-15:30,18:00-24:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8768208,
+          41.1233298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6838403592",
+      "properties": {
+        "@id": "node/6838403592",
+        "addr:city": "Bari",
+        "addr:postcode": "70122",
+        "addr:street": "Strada Vanese",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "Caffè dell'Accademia",
+        "outdoor_seating": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8705533,
+          41.1308671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6852265758",
+      "properties": {
+        "@id": "node/6852265758",
+        "addr:housenumber": "33",
+        "addr:street": "Piazza Federico Secondo di Svevia",
+        "amenity": "ice_cream",
+        "diet:gluten_free": "yes",
+        "diet:lactose_free": "yes",
+        "indoor_seating": "yes",
+        "name": "Gelateria Gentile",
+        "outdoor_seating": "yes",
+        "website": "https://www.gelateriagentile.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8675066,
+          41.1279984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6864570894",
+      "properties": {
+        "@id": "node/6864570894",
+        "addr:street": "Via Giovan Battista Trevisani",
+        "amenity": "bar",
+        "name": "Officina degli Esordi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8598097,
+          41.1253431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6877522880",
+      "properties": {
+        "@id": "node/6877522880",
+        "amenity": "cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8795704,
+          41.1143235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6877522881",
+      "properties": {
+        "@id": "node/6877522881",
+        "addr:city": "Bari",
+        "addr:housenumber": "133",
+        "addr:postcode": "70126",
+        "addr:street": "Via Giovanni Amendola",
+        "amenity": "pub",
+        "check_date": "2022-12-24",
+        "name": "Terra di Mezzo",
+        "payment:bancomat": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "payment:visa_electron": "yes",
+        "toilets": "yes",
+        "website": "https://www.pubterradimezzo.it/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8799486,
+          41.1144488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6877522882",
+      "properties": {
+        "@id": "node/6877522882",
+        "amenity": "cafe",
+        "name": "Latino"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8805682,
+          41.1140305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/6925283953",
+      "properties": {
+        "@id": "node/6925283953",
+        "addr:housenumber": "3",
+        "addr:street": "Largo Adua",
+        "amenity": "bar",
+        "check_date": "2022-12-27",
+        "name": "la Biglietteria",
+        "payment:bancomat": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "payment:visa_electron": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8757094,
+          41.1239012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7147068009",
+      "properties": {
+        "@id": "node/7147068009",
+        "amenity": "cafe",
+        "level": "-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8690093,
+          41.1182912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7184884015",
+      "properties": {
+        "@id": "node/7184884015",
+        "amenity": "cafe",
+        "check_date": "2025-12-08",
+        "diet:halal": "no",
+        "diet:kosher": "no",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Peroni",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8708743,
+          41.1180402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7299865516",
+      "properties": {
+        "@id": "node/7299865516",
+        "addr:city": "Bari",
+        "addr:housenumber": "195A",
+        "addr:postcode": "70121",
+        "addr:street": "Corso Cavour",
+        "amenity": "cafe",
+        "check_date": "2024-09-28",
+        "cuisine": "french;coffee_shop;tea;crepe;pancake;waffle;churro;chocolate;smoothie;ice_cream",
+        "diet:gluten_free": "yes",
+        "diet:lactose_free": "yes",
+        "indoor_seating": "yes",
+        "name": "Jérôme Chocolat",
+        "outdoor_seating": "yes",
+        "website": "https://jerome-chocolat.restauflow.it/store/bari",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.872464,
+          41.1201313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/7820263886",
+      "properties": {
+        "@id": "node/7820263886",
+        "addr:city": "Bari",
+        "addr:housenumber": "156",
+        "addr:postcode": "70121",
+        "addr:street": "Via Sparano da Bari",
+        "amenity": "cafe",
+        "brand": "Nespresso",
+        "brand:wikidata": "Q301301",
+        "diet:vegetarian": "no",
+        "name": "Nespresso",
+        "opening_hours": "Mo-Fr 09:30-20:00; Sa 09:30-20:30; Su 10:00-13:15,16:30-20:00",
+        "operator": "Nespresso",
+        "outdoor_seating": "no",
+        "shop": "coffee",
+        "smoking": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8698878,
+          41.1214819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9032919552",
+      "properties": {
+        "@id": "node/9032919552",
+        "addr:housenumber": "69",
+        "addr:street": "Piazza Mercantile",
+        "amenity": "pub",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Canarute",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8722504,
+          41.1280209
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9272686917",
+      "properties": {
+        "@id": "node/9272686917",
+        "addr:city": "Bari",
+        "addr:housenumber": "19",
+        "addr:postcode": "70121",
+        "addr:street": "Via Nicolò Putignani",
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "name": "Caffe Bellini",
+        "outdoor_seating": "yes",
+        "phone": "+39 0805247022",
+        "survey:date": "2021-11-21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8714495,
+          41.1235665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9272808317",
+      "properties": {
+        "@id": "node/9272808317",
+        "addr:city": "Bari",
+        "addr:housenumber": "55",
+        "addr:postcode": "70121",
+        "addr:street": "Corso Cavour",
+        "amenity": "ice_cream",
+        "name": "Gasperini",
+        "outdoor_seating": "yes",
+        "survey:date": "2021-11-21",
+        "website": "https://www.gelateriagasperini.it/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8719788,
+          41.1243631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9329502107",
+      "properties": {
+        "@id": "node/9329502107",
+        "addr:city": "Bari",
+        "addr:housenumber": "112",
+        "addr:postcode": "70123",
+        "addr:street": "Corso Giuseppe Mazzini",
+        "amenity": "bar",
+        "name": "Donna Carmela",
+        "opening_hours": "Mo-Su 06:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8562637,
+          41.1251757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9329508478",
+      "properties": {
+        "@id": "node/9329508478",
+        "addr:city": "Bari",
+        "addr:housenumber": "35",
+        "addr:postcode": "70123",
+        "addr:street": "Via Michele Mirenghi",
+        "amenity": "cafe",
+        "cuisine": "italian",
+        "internet_access": "yes",
+        "name": "Bar Stallone",
+        "opening_hours": "Mo-Fr 08:00-20:00",
+        "outdoor_seating": "no",
+        "phone": "+39 080 574 0865",
+        "website": "https://restaurantguru.it/BAR-Stallone-di-Stallone-Ignazio-Bari"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8533555,
+          41.1239135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9329519699",
+      "properties": {
+        "@id": "node/9329519699",
+        "addr:city": "Bari",
+        "addr:housenumber": "131",
+        "addr:postcode": "70122",
+        "addr:street": "Via Niccolò Piccinni",
+        "amenity": "ice_cream",
+        "name": "Gelateria Piccinni",
+        "opening_hours": "Mo-Fr 11:00-23:00",
+        "outdoor_seating": "no",
+        "takeaway": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8659603,
+          41.1252156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9348424856",
+      "properties": {
+        "@id": "node/9348424856",
+        "addr:city": "Bari",
+        "addr:housenumber": "9",
+        "addr:postcode": "70122",
+        "addr:street": "Corso Vittorio Emanuele Secondo",
+        "amenity": "ice_cream",
+        "name": "Yogo",
+        "opening_hours": "Mo-Fr 17:00-26:00; Sa 17:00-28:00; Su 17:00-27:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8713843,
+          41.1262892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9348455811",
+      "properties": {
+        "@id": "node/9348455811",
+        "amenity": "bar",
+        "name": "Chiosco Garibaldi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8616361,
+          41.1257741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9631074006",
+      "properties": {
+        "@id": "node/9631074006",
+        "addr:city": "Bari",
+        "addr:housenumber": "146",
+        "addr:postcode": "70122",
+        "addr:street": "Corso Vittorio Emanuele Secondo",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "email": "pasticceriarex@tiscali.it",
+        "name": "Pasticceria Rex",
+        "opening_hours": "Mo-Sa 06:30-20:30; We off; Su 06:30-14:00",
+        "outdoor_seating": "yes",
+        "phone": "+39 0805232296"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8642946,
+          41.1255887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9631077780",
+      "properties": {
+        "@id": "node/9631077780",
+        "addr:city": "Bari",
+        "addr:housenumber": "134",
+        "addr:postcode": "70122",
+        "addr:street": "Corso Vittorio Emanuele Secondo",
+        "amenity": "cafe",
+        "name": "Lassiduato",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8646783,
+          41.1256108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9631095179",
+      "properties": {
+        "@id": "node/9631095179",
+        "addr:city": "Bari",
+        "addr:housenumber": "28",
+        "addr:postcode": "70122",
+        "addr:street": "Via de Rossi",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Caffetteria Pizzuto",
+        "opening_hours": "Mo-Sa 06:30-18:30",
+        "outdoor_seating": "yes",
+        "phone": "+39 0805214141"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8653981,
+          41.124892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9631096021",
+      "properties": {
+        "@id": "node/9631096021",
+        "addr:city": "Bari",
+        "addr:housenumber": "104",
+        "addr:postcode": "70122",
+        "addr:street": "Via Roberto da Bari",
+        "amenity": "pub",
+        "email": "farmaciadeisani@live.it",
+        "name": "La Farmacia dei Sani",
+        "opening_hours": "Mo-Fr 12:30-14:30, 19:30-24:00",
+        "phone": "+39 0805282944"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8683594,
+          41.1229074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9886940117",
+      "properties": {
+        "@id": "node/9886940117",
+        "addr:city": "Bari",
+        "addr:housenumber": "56",
+        "addr:postcode": "70121",
+        "addr:street": "Corso Cavour",
+        "amenity": "cafe",
+        "name": "Mokador",
+        "opening_hours": "Mo-Su 07:00-00:00",
+        "phone": "+3913355308",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8728576,
+          41.1221339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/9974954709",
+      "properties": {
+        "@id": "node/9974954709",
+        "addr:city": "Bari",
+        "addr:country": "IT",
+        "addr:housenumber": "126",
+        "addr:postcode": "70121",
+        "addr:street": "Corso Cavour",
+        "amenity": "cafe",
+        "name": "Caffè Italiano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8728012,
+          41.1203094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10023439240",
+      "properties": {
+        "@id": "node/10023439240",
+        "addr:city": "Bari",
+        "addr:housenumber": "22",
+        "addr:postcode": "70121",
+        "addr:street": "Via Salvatore Cognetti",
+        "amenity": "cafe",
+        "changing_table": "yes",
+        "changing_table:count": "1",
+        "changing_table:location": "wheelchair_toilet",
+        "contact:phone": "+39 080 864 1410",
+        "contact:website": "https://www.salvatorepetriella.it",
+        "level": "0",
+        "name": "Salvatore Petriella - Pasticceria Café & Bistrot",
+        "opening_hours": "Mo-Su 07:00-21:30; PH closed",
+        "operator": "Petriella Salvatore",
+        "outdoor_seating": "yes",
+        "outdoor_seating:comfort": "weather_protection",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8731513,
+          41.1233505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10282688559",
+      "properties": {
+        "@id": "node/10282688559",
+        "addr:city": "Bari",
+        "addr:housenumber": "47",
+        "addr:postcode": "70122",
+        "addr:street": "Corso Vittorio Emanuele Secondo",
+        "amenity": "cafe",
+        "check_date": "2026-10-03",
+        "check_date:diet:vegetarian": "2026-10-03",
+        "contact:phone": "+39 080 917 9912;+39 375 548 8463",
+        "cuisine": "italian",
+        "diet:gluten_free": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Colibrio",
+        "outdoor_seating": "yes",
+        "payment:bancomat": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "payment:visa_electron": "yes",
+        "toilets": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8703801,
+          41.1264539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10283412927",
+      "properties": {
+        "@id": "node/10283412927",
+        "addr:city": "Bari",
+        "addr:housenumber": "23",
+        "addr:postcode": "70122",
+        "addr:street": "Via Niccolò Piccinni",
+        "amenity": "cafe",
+        "check_date": "2025-12-26",
+        "cuisine": "coffee_shop;italian",
+        "indoor_seating": "yes",
+        "name": "Cavour 23 - Caffè Vergnano",
+        "outdoor_seating": "yes",
+        "payment:bancomat": "yes",
+        "payment:cash": "yes",
+        "payment:coins": "yes",
+        "payment:debit_cards": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "payment:visa_electron": "yes",
+        "phone": "+39 0809671169",
+        "smoking": "outside",
+        "toilets": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8718677,
+          41.1253748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10289280883",
+      "properties": {
+        "@id": "node/10289280883",
+        "addr:housenumber": "94",
+        "addr:street": "Via Nicola de Giosa",
+        "amenity": "cafe",
+        "name": "Crema & Cioccolato",
+        "ref:vatin": "IT08221600722"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.874029,
+          41.1202182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10289979259",
+      "properties": {
+        "@id": "node/10289979259",
+        "addr:city": "Bari",
+        "addr:housenumber": "19/21",
+        "addr:street": "Lungomare Nazario Sauro",
+        "amenity": "bar",
+        "check_date": "2023-12-27",
+        "contact:phone": "+39 080 222 4024",
+        "indoor_seating": "yes",
+        "name": "Riviera",
+        "operator": "Riviera s.r.l.s.",
+        "outdoor_seating": "yes",
+        "payment:bancomat": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "payment:visa_electron": "yes",
+        "toilets": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8803843,
+          41.1218934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10959864597",
+      "properties": {
+        "@id": "node/10959864597",
+        "addr:city": "Bari",
+        "addr:housenumber": "75",
+        "addr:postcode": "70122",
+        "addr:street": "Via Quintino Sella",
+        "amenity": "cafe",
+        "check_date": "2023-06-11",
+        "currency:XBT": "yes",
+        "name": "Caffè Big Ben",
+        "payment:lightning": "yes",
+        "payment:lightning_contactless": "yes",
+        "payment:onchain": "yes",
+        "phone": "+39 0805227668"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8641392,
+          41.1233234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/10981659205",
+      "properties": {
+        "@id": "node/10981659205",
+        "addr:city": "Bari",
+        "addr:housenumber": "23",
+        "addr:postcode": "70122",
+        "addr:street": "Strada Angiola",
+        "amenity": "pub",
+        "indoor_seating": "yes",
+        "name": "La Ciclatera",
+        "outdoor_seating": "yes",
+        "phone": "+39 0805289368",
+        "smoking": "outside",
+        "website": "https://laciclatera.eatbu.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8697074,
+          41.1270821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11011888126",
+      "properties": {
+        "@id": "node/11011888126",
+        "amenity": "pub",
+        "name": "Jerusalem"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8637024,
+          41.1165115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11062854000",
+      "properties": {
+        "@id": "node/11062854000",
+        "addr:city": "Bari",
+        "addr:housenumber": "63",
+        "addr:postcode": "70121",
+        "addr:street": "Via Principe Amedeo",
+        "amenity": "cafe",
+        "name": "Caffè Moravia",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8693012,
+          41.1227278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11098205063",
+      "properties": {
+        "@id": "node/11098205063",
+        "addr:city": "Bari",
+        "addr:housenumber": "112",
+        "addr:postcode": "70121",
+        "addr:street": "Via Argiro",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "check_date": "2023-08-07",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "07:00-21:00",
+        "payment:credit_cards": "yes",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.it/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8706769,
+          41.1225391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11227951815",
+      "properties": {
+        "@id": "node/11227951815",
+        "amenity": "cafe",
+        "check_date": "2023-09-29",
+        "name": "Bistrot 21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8723505,
+          41.1161784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11359018241",
+      "properties": {
+        "@id": "node/11359018241",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Bariè",
+        "outdoor_seating": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8713613,
+          41.1269886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11360540739",
+      "properties": {
+        "@id": "node/11360540739",
+        "addr:street": "Via Sabino Fiorese",
+        "amenity": "cafe",
+        "check_date": "2023-12-24",
+        "cuisine": "regional",
+        "name": "Giuvì",
+        "payment:cash": "yes",
+        "tobacco": "yes",
+        "toilets": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8744347,
+          41.1244724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11361945542",
+      "properties": {
+        "@id": "node/11361945542",
+        "amenity": "cafe",
+        "name": "Cavaliere"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8522147,
+          41.1222297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11449625216",
+      "properties": {
+        "@id": "node/11449625216",
+        "addr:housenumber": "79",
+        "addr:postcode": "70122",
+        "addr:street": "Via Andrea da Bari",
+        "amenity": "cafe",
+        "check_date": "2023-12-24",
+        "contact:phone": "+39 0805236101",
+        "name": "Tesori domani Sicilia",
+        "operator": "M. & M. Srlsu",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8686645,
+          41.1235735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11459797802",
+      "properties": {
+        "@id": "node/11459797802",
+        "amenity": "cafe",
+        "check_date": "2023-12-27",
+        "name": "Vavì"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8792891,
+          41.1218665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11466240056",
+      "properties": {
+        "@id": "node/11466240056",
+        "addr:city": "Bari",
+        "addr:housenumber": "5",
+        "addr:street": "Piazza dell'Odegitria",
+        "amenity": "cafe",
+        "bar": "yes",
+        "check_date": "2025-12-14",
+        "cuisine": "regional",
+        "indoor_seating": "no",
+        "name": "Caffè del Borgo",
+        "operator": "Ar. Gio s.r.l.s.",
+        "outdoor_seating": "yes",
+        "payment:bancomat": "yes",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "smoking": "yes",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "toilets:wheelchair": "no",
+        "website": "https://www.caffedelborgo.it/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8683763,
+          41.1283925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11494272926",
+      "properties": {
+        "@id": "node/11494272926",
+        "addr:city": "Bari",
+        "addr:housenumber": "25/a",
+        "addr:postcode": "70122",
+        "addr:street": "Via Sparano da Bari",
+        "amenity": "cafe",
+        "check_date": "2025-08-28",
+        "indoor_seating": "yes",
+        "name": "Bacio di Latte Caffè",
+        "opening_hours": "07:00-21:00",
+        "outdoor_seating": "yes",
+        "phone": "+39 0805234177",
+        "smoking": "outside",
+        "website": "https://www.baciodilattebari.it/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8692524,
+          41.1251144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11497752755",
+      "properties": {
+        "@id": "node/11497752755",
+        "addr:city": "Bari",
+        "addr:housenumber": "61b",
+        "addr:postcode": "70121",
+        "addr:street": "Via Alessandro Maria Calefati",
+        "amenity": "cafe",
+        "name": "Jérôme Cafè",
+        "outdoor_seating": "yes",
+        "phone": "+39 0805212525"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8692049,
+          41.124141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11503155518",
+      "properties": {
+        "@id": "node/11503155518",
+        "addr:city": "Bari",
+        "addr:housenumber": "120",
+        "addr:postcode": "70121",
+        "addr:street": "Via Sparano da Bari",
+        "amenity": "cafe",
+        "name": "Caffè Cognetti",
+        "outdoor_seating": "yes",
+        "phone": "+39 0809260733",
+        "website": "https://www.caffecognetti.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8698103,
+          41.1224965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11512096936",
+      "properties": {
+        "@id": "node/11512096936",
+        "addr:city": "Bari",
+        "addr:housenumber": "150",
+        "addr:postcode": "70121",
+        "addr:street": "Via Sparano da Bari",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Caffè Vergnano 1882",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.869873,
+          41.1216231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11512132790",
+      "properties": {
+        "@id": "node/11512132790",
+        "addr:city": "Bari",
+        "addr:housenumber": "137",
+        "addr:postcode": "70121",
+        "addr:street": "Via Argiro",
+        "amenity": "cafe",
+        "name": "Tiffany Caffè",
+        "outdoor_seating": "yes",
+        "phone": "+39 0805232447",
+        "website": "https://www.tiffanycaffe.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.87047,
+          41.1218656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11513853000",
+      "properties": {
+        "@id": "node/11513853000",
+        "addr:city": "Bari",
+        "addr:housenumber": "178",
+        "addr:postcode": "70121",
+        "addr:street": "Via Sparano da Bari",
+        "amenity": "cafe",
+        "cocktails": "yes",
+        "cuisine": "french;italian;regional;coffee_shop;dessert;pancake;crepe;ice_cream;smoothie",
+        "name": "Jérôme Bakery",
+        "outdoor_seating": "yes",
+        "phone": "+39 080 975 3071",
+        "website": "https://jeromebakery.it/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8700978,
+          41.1192267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11768817569",
+      "properties": {
+        "@id": "node/11768817569",
+        "amenity": "cafe",
+        "cuisine": "brazilian",
+        "name": "Bistrot Brasil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8708536,
+          41.128917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11805852405",
+      "properties": {
+        "@id": "node/11805852405",
+        "addr:city": "Bari",
+        "addr:housenumber": "1",
+        "addr:postcode": "70122",
+        "addr:street": "Via Argiro",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Saicaf Il Caffé",
+        "outdoor_seating": "yes",
+        "website": "https://www.saicaf.it/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8700645,
+          41.1259186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11810312960",
+      "properties": {
+        "@id": "node/11810312960",
+        "addr:city": "Bari",
+        "addr:housenumber": "32",
+        "addr:postcode": "70122",
+        "addr:street": "Via Argiro",
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Semplice Café",
+        "opening_hours": "Mo-Sa 07:00-22:30; Su 08:00-22:30",
+        "outdoor_seating": "yes",
+        "phone": "+39 080 573 9071",
+        "website": "https://www.semplicecafe.it/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8704343,
+          41.1250035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11876966718",
+      "properties": {
+        "@id": "node/11876966718",
+        "addr:city": "Bari",
+        "addr:housenumber": "74",
+        "addr:postcode": "70121",
+        "addr:street": "Via Argiro",
+        "amenity": "cafe",
+        "name": "Caffé Argiro",
+        "outdoor_seating": "yes",
+        "phone": "+39 0805215211"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8705695,
+          41.1236739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11876966722",
+      "properties": {
+        "@id": "node/11876966722",
+        "addr:city": "Bari",
+        "addr:housenumber": "64",
+        "addr:postcode": "70121",
+        "addr:street": "Via Argiro",
+        "amenity": "cafe",
+        "check_date": "2025-03-22",
+        "cuisine": "coffee_shop;ice_cream;pastry;waffle;pancake;donut",
+        "indoor_seating": "yes",
+        "name": "Se Ti Va",
+        "outdoor_seating": "yes",
+        "phone": "+39 3293332016",
+        "toilets": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8705504,
+          41.123882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11877144531",
+      "properties": {
+        "@id": "node/11877144531",
+        "addr:city": "Bari",
+        "addr:housenumber": "88",
+        "addr:postcode": "70121",
+        "addr:street": "Via Argiro",
+        "amenity": "cafe",
+        "name": "Café Murat",
+        "outdoor_seating": "yes",
+        "phone": "+39 0802049109"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8706048,
+          41.1232568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11879001078",
+      "properties": {
+        "@id": "node/11879001078",
+        "addr:city": "Bari",
+        "addr:housenumber": "105",
+        "addr:postcode": "70121",
+        "addr:street": "Via Argiro",
+        "amenity": "cafe",
+        "name": "Serafina Cafè",
+        "outdoor_seating": "yes",
+        "phone": "+39 3209672960"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8703656,
+          41.1228882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11879093319",
+      "properties": {
+        "@id": "node/11879093319",
+        "addr:city": "Bari",
+        "addr:housenumber": "119",
+        "addr:postcode": "70121",
+        "addr:street": "Via Argiro",
+        "amenity": "cafe",
+        "contact:instagram": "https://www.instagram.com/fuwa_bari/",
+        "cuisine": "coffee_shop;japanese;dessert;seafood",
+        "name": "Fuwa",
+        "outdoor_seating": "yes",
+        "website:menu": "https://qrco.de/fuwa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8704273,
+          41.122447
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11907851380",
+      "properties": {
+        "@id": "node/11907851380",
+        "amenity": "cafe",
+        "name": "Bar Giotì"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8589768,
+          41.1203073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11907854756",
+      "properties": {
+        "@id": "node/11907854756",
+        "addr:city": "Bari",
+        "addr:housenumber": "58A",
+        "addr:postcode": "70122",
+        "addr:street": "Via Roberto da Bari",
+        "amenity": "cafe",
+        "email": "info@caffeportineria.it",
+        "name": "Caffè Portineria",
+        "phone": "+39 3517204482",
+        "website": "https://www.caffèportineria.it"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8682278,
+          41.1241993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11917620888",
+      "properties": {
+        "@id": "node/11917620888",
+        "addr:city": "Bari",
+        "addr:housenumber": "28",
+        "addr:postcode": "70122",
+        "addr:street": "Via Melo da Bari",
+        "amenity": "cafe",
+        "name": "Caffè Vanity",
+        "phone": "+39 0805212265"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8712815,
+          41.1252131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11917696867",
+      "properties": {
+        "@id": "node/11917696867",
+        "addr:city": "Bari",
+        "addr:housenumber": "57",
+        "addr:postcode": "70121",
+        "addr:street": "Via Melo da Bari",
+        "amenity": "cafe",
+        "name": "Glamour Caffè",
+        "phone": "+39 0803215895"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8710992,
+          41.1243719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11926625590",
+      "properties": {
+        "@id": "node/11926625590",
+        "addr:city": "Bari",
+        "addr:housenumber": "139",
+        "addr:postcode": "70121",
+        "addr:street": "Via Melo da Bari",
+        "amenity": "cafe",
+        "name": "Mozart Caffé",
+        "phone": "+39 0805245015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8713624,
+          41.1219103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11985696827",
+      "properties": {
+        "@id": "node/11985696827",
+        "addr:city": "Bari",
+        "addr:housenumber": "182",
+        "addr:postcode": "70123",
+        "addr:street": "Corso Vittorio Emanuele Secondo",
+        "amenity": "cafe",
+        "name": "Black Lounge Bar",
+        "outdoor_seating": "yes",
+        "phone": "+39 0808642695",
+        "website": "https://www.blackloungebar.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8630281,
+          41.1255207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11990635980",
+      "properties": {
+        "@id": "node/11990635980",
+        "addr:city": "Bari",
+        "addr:housenumber": "16",
+        "addr:postcode": "70122",
+        "addr:street": "Corso Vittorio Emanuele Secondo",
+        "amenity": "cafe",
+        "name": "Bravo Caffè"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8714587,
+          41.1260129
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/11990635982",
+      "properties": {
+        "@id": "node/11990635982",
+        "addr:city": "Bari",
+        "addr:housenumber": "12",
+        "addr:postcode": "70122",
+        "addr:street": "Corso Vittorio Emanuele Secondo",
+        "amenity": "ice_cream",
+        "email": "icedreamsrls@gmail.com",
+        "name": "Coccolato",
+        "phone": "+39 3287354289"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8715626,
+          41.1260185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12014700636",
+      "properties": {
+        "@id": "node/12014700636",
+        "addr:city": "Bari",
+        "addr:housenumber": "18",
+        "addr:place": "Piazza Aldo Moro",
+        "addr:postcode": "70122",
+        "amenity": "cafe",
+        "name": "Caffè vergnano",
+        "phone": "080 523 5853"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8706133,
+          41.1192524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12020708777",
+      "properties": {
+        "@id": "node/12020708777",
+        "amenity": "cafe",
+        "cuisine": "georgian",
+        "name": "Cafe-Bar Georgia",
+        "start_date": "2022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8607734,
+          41.1224997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12037541106",
+      "properties": {
+        "@id": "node/12037541106",
+        "addr:city": "Bari",
+        "addr:housenumber": "125",
+        "addr:postcode": "70122",
+        "addr:street": "Via Principe Amedeo",
+        "amenity": "cafe",
+        "email": "atricasi@hotmail.com",
+        "name": "Komodo Cafè",
+        "outdoor_seating": "yes",
+        "phone": "+39 3496910600"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8668767,
+          41.1226141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12074636599",
+      "properties": {
+        "@id": "node/12074636599",
+        "amenity": "cafe",
+        "name": "La Brasserie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8705795,
+          41.1169508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12211385758",
+      "properties": {
+        "@id": "node/12211385758",
+        "addr:city": "Bari",
+        "addr:housenumber": "63",
+        "addr:postcode": "70121",
+        "addr:street": "Via Dante Alighieri",
+        "amenity": "cafe",
+        "name": "Caffè Dante",
+        "survey:date": "2024-09-30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8694325,
+          41.1221011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12231482195",
+      "properties": {
+        "@id": "node/12231482195",
+        "amenity": "cafe",
+        "name": "Bianca Cafe",
+        "outdoor_seating": "yes",
+        "survey:date": "2024-10-07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.870757,
+          41.1226789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12231511429",
+      "properties": {
+        "@id": "node/12231511429",
+        "amenity": "cafe",
+        "name": "Dolce e Salato",
+        "outdoor_seating": "yes",
+        "survey:date": "2024-10-07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8682833,
+          41.1216843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12284957766",
+      "properties": {
+        "@id": "node/12284957766",
+        "addr:city": "Bari",
+        "addr:postcode": "70121",
+        "addr:street": "Via Domenico Nicolai",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "Aurelio Cafè",
+        "opening_hours": "Mo-Sa 07:30-20:30; Su 08:30-13:30",
+        "outdoor_seating": "yes",
+        "pets": "yes",
+        "pets_allowed": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8688612,
+          41.1213921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12302043419",
+      "properties": {
+        "@id": "node/12302043419",
+        "amenity": "cafe",
+        "name": "Black Lounge bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8526747,
+          41.1217622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12302794497",
+      "properties": {
+        "@id": "node/12302794497",
+        "addr:housenumber": "105",
+        "addr:street": "Via Sparano da Bari",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;ice_cream",
+        "indoor_seating": "yes",
+        "name": "San Francesco",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8695214,
+          41.1222581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12312130903",
+      "properties": {
+        "@id": "node/12312130903",
+        "addr:street": "Piazza dell'Odegitria",
+        "amenity": "cafe",
+        "diet:vegetarian": "yes",
+        "name": "Stefy's Cathedral Coffee",
+        "outdoor_seating": "yes",
+        "website": "https://www.stefyscathedralcoffee.it/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8686077,
+          41.1287109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12315702330",
+      "properties": {
+        "@id": "node/12315702330",
+        "addr:housenumber": "67",
+        "addr:street": "Via Andrea da Bari",
+        "amenity": "cafe",
+        "name": "Caffè Roma"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8686557,
+          41.1238267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12408884801",
+      "properties": {
+        "@id": "node/12408884801",
+        "addr:housenumber": "18",
+        "addr:postcode": "70123",
+        "addr:street": "Via Indipendenza",
+        "amenity": "cafe",
+        "name": "White cafè",
+        "opening_hours": "Mo-Sa 07:00-19:30; Su 07:00-13:00",
+        "phone": "+393476506817"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8550707,
+          41.1226487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12427137252",
+      "properties": {
+        "@id": "node/12427137252",
+        "addr:street": "Via Giuseppe Re David",
+        "amenity": "cafe",
+        "name": "Mamajuana",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8736733,
+          41.1171484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12427220965",
+      "properties": {
+        "@id": "node/12427220965",
+        "addr:street": "Viale Unità d'Italia",
+        "amenity": "cafe",
+        "check_date": "2024-12-16",
+        "name": "Conticchio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8729409,
+          41.1161646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12427220973",
+      "properties": {
+        "@id": "node/12427220973",
+        "amenity": "cafe",
+        "check_date": "2024-12-16",
+        "name": "Dea cafè"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8716253,
+          41.1169677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12526517013",
+      "properties": {
+        "@id": "node/12526517013",
+        "addr:street": "Via Dante Alighieri",
+        "amenity": "cafe",
+        "check_date": "2025-05-06",
+        "cuisine": "coffee_shop;ice_cream;pastry",
+        "name": "Crema & Cioccolato",
+        "website": "https://www.cremaecioccolato.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8680501,
+          41.1220024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12526517014",
+      "properties": {
+        "@id": "node/12526517014",
+        "addr:street": "Via Dante Alighieri",
+        "amenity": "cafe",
+        "check_date": "2025-01-02",
+        "name": "Fadi",
+        "tobacco": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8550035,
+          41.1212433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12585605779",
+      "properties": {
+        "@id": "node/12585605779",
+        "amenity": "cafe",
+        "check_date": "2025-02-12",
+        "name": "Piccola Caffetteria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8512319,
+          41.1273057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12694054156",
+      "properties": {
+        "@id": "node/12694054156",
+        "amenity": "cafe",
+        "check_date": "2025-03-22",
+        "name": "Mozart Cafè",
+        "opening_hours": "Mo-Su 07:00-19:00",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8682535,
+          41.1238528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12694054171",
+      "properties": {
+        "@id": "node/12694054171",
+        "amenity": "cafe",
+        "check_date": "2025-03-22",
+        "name": "Baretto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.868392,
+          41.1224287
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12814451480",
+      "properties": {
+        "@id": "node/12814451480",
+        "addr:street": "Via Dante Alighieri",
+        "amenity": "cafe",
+        "check_date": "2025-05-06",
+        "name": "Floriano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8674154,
+          41.121966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12814451498",
+      "properties": {
+        "@id": "node/12814451498",
+        "addr:street": "Via Dante Alighieri",
+        "amenity": "cafe",
+        "name": "Dodo",
+        "website": "https://dodo-cafe.metro.bar/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8663748,
+          41.1219101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12818821227",
+      "properties": {
+        "@id": "node/12818821227",
+        "addr:street": "Via de Rossi",
+        "amenity": "cafe",
+        "check_date": "2025-05-06",
+        "cuisine": "coffee_shop;dessert;pastry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8654873,
+          41.1213876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/12877000901",
+      "properties": {
+        "@id": "node/12877000901",
+        "addr:street": "Via Alessandro Manzoni",
+        "amenity": "cafe",
+        "name": "... Nicole"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8610606,
+          41.1237486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13065327758",
+      "properties": {
+        "@id": "node/13065327758",
+        "addr:housenumber": "98",
+        "addr:street": "Via Niccolò Piccinni",
+        "amenity": "bar",
+        "check_date": "2025-08-10",
+        "internet_access": "wlan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8679239,
+          41.1251507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13065327770",
+      "properties": {
+        "@id": "node/13065327770",
+        "addr:city": "Bari",
+        "addr:housenumber": "81",
+        "addr:postcode": "70122",
+        "addr:street": "Via Niccolò Piccinni",
+        "amenity": "cafe",
+        "name": "Veronero Caffè",
+        "website": "https://www.veronero.it/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.868929,
+          41.1253986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13065560253",
+      "properties": {
+        "@id": "node/13065560253",
+        "addr:street": "Via Antonio Beatillo",
+        "amenity": "cafe",
+        "name": "Napoleon",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8718135,
+          41.1214392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13070571128",
+      "properties": {
+        "@id": "node/13070571128",
+        "addr:city": "Bari",
+        "addr:housenumber": "35",
+        "addr:postcode": "70122",
+        "addr:street": "Via San Francesco d'Assisi",
+        "amenity": "cafe",
+        "name": "Bar dello Studente",
+        "operator": "Scamarda Maria",
+        "phone": "+39 080 5211516",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8644238,
+          41.1269413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13078522962",
+      "properties": {
+        "@id": "node/13078522962",
+        "addr:city": "Bari",
+        "addr:housenumber": "12",
+        "addr:postcode": "70122",
+        "addr:street": "Via Roberto da Bari",
+        "amenity": "bar",
+        "mobile": "+39 3423938353",
+        "name": "Cave de la Presse",
+        "website": "https://www.cdlp.it/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8681007,
+          41.1255277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13078603728",
+      "properties": {
+        "@id": "node/13078603728",
+        "addr:city": "Bari",
+        "addr:housenumber": "15",
+        "addr:postcode": "70122",
+        "addr:street": "Via Benedetto Cairoli",
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "bar": "yes",
+        "cuisine": "coffee_shop;cafe;breakfast",
+        "delivery": "yes",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Caracolito Coffee Shop",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "self_service": "no",
+        "stroller": "limited",
+        "takeaway": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8668321,
+          41.1253778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13089592450",
+      "properties": {
+        "@id": "node/13089592450",
+        "addr:city": "Bari",
+        "addr:housenumber": "1",
+        "addr:postcode": "70122",
+        "addr:street": "Piazza del Ferrarese",
+        "amenity": "cafe",
+        "name": "Caffè del Ferrarese"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8717197,
+          41.1267912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13100345353",
+      "properties": {
+        "@id": "node/13100345353",
+        "amenity": "cafe",
+        "check_date": "2025-08-26",
+        "cuisine": "coffee_shop;pastry",
+        "name": "White Manhattan",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8674846,
+          41.1166994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13133048745",
+      "properties": {
+        "@id": "node/13133048745",
+        "addr:city": "Bari",
+        "addr:housenumber": "175",
+        "addr:postcode": "70122",
+        "addr:street": "Via Abate Giacinto Gimma",
+        "amenity": "cafe",
+        "name": "Ladisa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8649828,
+          41.1245072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13138187115",
+      "properties": {
+        "@id": "node/13138187115",
+        "addr:city": "Bari",
+        "addr:housenumber": "198",
+        "addr:postcode": "70123",
+        "addr:street": "Via Scipione Crisanzio",
+        "amenity": "cafe",
+        "name": "Re Sole Cafè e Bistrot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8590882,
+          41.1191843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13294937248",
+      "properties": {
+        "@id": "node/13294937248",
+        "addr:city": "Bari",
+        "addr:housenumber": "51",
+        "addr:postcode": "70121",
+        "addr:street": "Via Alessandro Maria Calefati",
+        "amenity": "cafe",
+        "name": "Bengodi",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8699672,
+          41.1241496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13319056772",
+      "properties": {
+        "@id": "node/13319056772",
+        "amenity": "cafe",
+        "check_date": "2025-11-20",
+        "name": "I Tesori di Sicilia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8671667,
+          41.1242535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13319056774",
+      "properties": {
+        "@id": "node/13319056774",
+        "addr:street": "Via Benedetto Cairoli",
+        "amenity": "cafe",
+        "check_date": "2025-11-20",
+        "name": "N 20 Sala e Tabacchi",
+        "tobacco": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8671825,
+          41.1240061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13319056787",
+      "properties": {
+        "@id": "node/13319056787",
+        "amenity": "cafe",
+        "check_date": "2025-11-20",
+        "name": "July"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8669524,
+          41.1244338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13319056792",
+      "properties": {
+        "@id": "node/13319056792",
+        "amenity": "cafe",
+        "check_date": "2025-11-20",
+        "name": "Caffetteria del Marchese",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8664067,
+          41.123767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13342320759",
+      "properties": {
+        "@id": "node/13342320759",
+        "amenity": "pub",
+        "name": "Passion Fruit Enjoy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8710881,
+          41.1279733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13361574512",
+      "properties": {
+        "@id": "node/13361574512",
+        "addr:city": "Bari",
+        "addr:housenumber": "32",
+        "addr:postcode": "70122",
+        "addr:street": "Piazza Federico Secondo di Svevia",
+        "amenity": "cafe",
+        "check_date": "2025-12-08",
+        "coffee:brand": "Ninfole",
+        "name": "Bar I Templari",
+        "operator": "Mariagrazia Ferrigni",
+        "outdoor_seating": "yes",
+        "ref:vatin": "IT07000290721"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.867559,
+          41.1280373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13727095201",
+      "properties": {
+        "@id": "node/13727095201",
+        "amenity": "cafe",
+        "check_date": "2026-04-13",
+        "contact:instagram": "cosmico.bari",
+        "cuisine": "coffee_shop",
+        "name": "Cosmico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.87102,
+          41.1251885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13830330001",
+      "properties": {
+        "@id": "node/13830330001",
+        "addr:housenumber": "95-101",
+        "addr:street": "Corso Sidney Sonnino",
+        "amenity": "cafe",
+        "name": "Bar Viola",
+        "opening_hours": "Mo-Su 06:30-20:30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8808077,
+          41.1197552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13970706359",
+      "properties": {
+        "@id": "node/13970706359",
+        "addr:city": "Bari",
+        "addr:housenumber": "11a",
+        "addr:postcode": "70121",
+        "addr:street": "Via Alessandro Maria Calefati",
+        "amenity": "cafe",
+        "name": "Il Caffettaio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8716615,
+          41.1242464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/14155685401",
+      "properties": {
+        "@id": "node/14155685401",
+        "amenity": "ice_cream",
+        "name": "Benvenuto da MaMà"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8710264,
+          41.129508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/14166536565",
+      "properties": {
+        "@id": "node/14166536565",
+        "addr:city": "Bari",
+        "addr:housenumber": "2",
+        "addr:postcode": "70122",
+        "addr:street": "Via Re Manfredi",
+        "amenity": "pub",
+        "name": "Mojiteria & Kitchen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8724119,
+          41.128191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/14166536567",
+      "properties": {
+        "@id": "node/14166536567",
+        "addr:city": "Bari",
+        "addr:housenumber": "4",
+        "addr:postcode": "70122",
+        "addr:street": "Via Re Manfredi",
+        "amenity": "pub",
+        "mobile": "+39 329 826 7576",
+        "name": "Le Chat Noir",
+        "opening_hours": "Mo-Su 19:00-02:00",
+        "website": "https://lechatnoir.eatbu.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8724991,
+          41.128198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/14335450601",
+      "properties": {
+        "@id": "node/14335450601",
+        "addr:housenumber": "19",
+        "addr:postcode": "70122",
+        "addr:street": "Via Pier L'Eremita",
+        "amenity": "cafe",
+        "check_date": "2026-10-31",
+        "check_date:opening_hours": "2026-10-31",
+        "name": "StanzaCaffè",
+        "opening_hours": "Mo-Fr 07:00-19:00; Sa 07:00-14:00",
+        "phone": "+39 080 914 7879"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.8688928,
+          41.1311331
+        ]
+      }
+    }
+  ]
+}
