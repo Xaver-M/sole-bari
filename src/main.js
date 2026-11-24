@@ -224,8 +224,8 @@ function update(date) {
 async function init() {
   // 1. Beide Dateien parallel laden
   const [buildingData, cafeData] = await Promise.all([
-    loadJSON("/data/buildings.geojson"),
-    loadJSON("/data/cafes.geojson"),
+    loadJSON(`${import.meta.env.BASE_URL}data/buildings.geojson`),
+    loadJSON(`${import.meta.env.BASE_URL}data/cafes.geojson`),
   ]);
 
   // 2. Gebäude aufbereiten
