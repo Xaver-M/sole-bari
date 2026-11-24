@@ -10,8 +10,19 @@
     <title>Sole Bari</title>
   </head>
   <body>
-    <div id="map"></div>
-    <div id="info">Lade Sonnenstand…</div>
+    <div id="app">
+      <aside id="sidebar">
+        <h1>☀️ Sole Bari</h1>
+        <div id="info">Lade Sonnenstand…</div>
+
+        <h2>Gerade in der Sonne <span id="sunny-count"></span></h2>
+        <ul id="cafe-list">
+          <li class="empty">Lade Cafés…</li>
+        </ul>
+      </aside>
+
+      <div id="map"></div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

@@ -15,6 +15,13 @@ const DEFAULT_HEIGHT = 16; // Standardhöhe ohne OSM-Angabe
 // null = aktuelle Uhrzeit
 const TEST_TIME = new Date("2026-11-25T12:00:00");
 
+const TYPE_LABELS = {
+  cafe: "Café",
+  bar: "Bar",
+  pub: "Pub",
+  ice_cream: "Eisdiele",
+};
+
 // --- Hilfsfunktionen ---
 function formatTime(date) {
   return date.toLocaleTimeString("de-DE", {
@@ -30,14 +37,20 @@ function getHeight(props) {
   return DEFAULT_HEIGHT;
 }
 
+async function loadJSON(url) {
+  const res = await fetch(url);
+  return res.json();
+}
+
 // --- Sonne ---
 const now = TEST_TIME ?? new Date();
 const sun = getSunPosition(now, START[0], START[1]);
 const times = getSunTimes(now, START[0], START[1]);
 
 document.getElementById("info").textContent =
-  `${formatTime(now)} · Sonnenhöhe: ${sun.elevation.toFixed(1)}° · Richtung: ${sun.azimuth.toFixed(0)}° · ` +
-  `Aufgang: ${formatTime(times.sunrise)} · Untergang: ${formatTime(times.sunset)}`;
+  `🕒 ${formatTime(now)} Uhr\n` +
+  `☀️ Höhe ${sun.elevation.toFixed(1)}° · Richtung ${sun.azimuth.toFixed(0)}°\n` +
+  `🌅 ${formatTime(times.sunrise)} · 🌇 ${formatTime(times.sunset)}`;
 
 // --- Karte ---
 const map = L.map("map", { preferCanvas: true }).setView(START, START_ZOOM);
@@ -53,41 +66,64 @@ map.getPane("shadows").style.zIndex = 350;
 map.getPane("shadows").style.opacity = 0.45;
 const shadowRenderer = L.canvas({ pane: "shadows" });
 
-// Koordinaten bei Klick auf die Karte anzeigen
-map.on("click", (e) => {
-  const { lat, lng } = e.latlng;
-  L.popup()
-    .setLatLng(e.latlng)
-    .setContent(`${lat.toFixed(5)}, ${lng.toFixed(5)}`)
-    .openOn(map);
-});
+// --- Liste links ---
+function renderList(cafes) {
+  const sunny = cafes
+    .filter((cafe) => !cafe.inShadow)
+    .sort(
+      (a, b) => b.outdoor - a.outdoor || a.name.localeCompare(b.name, "it"),
+    );
 
-// --- Cafés (vorerst noch manuell) ---
-const cafes = [
-  { name: "Café Gioto", coords: [41.12029, 16.85897] },
-  { name: "Caffetteria del Tribunale", coords: [41.12413, 16.8573] },
-];
+  document.getElementById("sunny-count").textContent = `(${sunny.length})`;
 
-const cafeMarkers = cafes.map((cafe) =>
-  L.circleMarker(cafe.coords, { radius: 7, color: "red" })
-    .bindPopup(cafe.name)
-    .addTo(map),
-);
+  const list = document.getElementById("cafe-list");
+  list.innerHTML = "";
 
-// --- Gebäude und Schatten ---
-async function loadBuildings() {
-  const res = await fetch("/data/buildings.geojson");
-  const data = await res.json();
+  if (sunny.length === 0) {
+    const li = document.createElement("li");
+    li.className = "empty";
+    li.textContent = "Gerade liegt kein Café in der Sonne 🌥️";
+    list.appendChild(li);
+    return;
+  }
 
-  // Nur echte Flächen (keine Punkte oder offenen Linien)
-  const buildings = data.features.filter((f) =>
+  sunny.forEach((cafe) => {
+    const li = document.createElement("li");
+
+    const nameEl = document.createElement("div");
+    nameEl.className = "cafe-name";
+    nameEl.textContent = `${cafe.outdoor ? "🪑 " : ""}${cafe.name}`;
+
+    const metaEl = document.createElement("div");
+    metaEl.className = "cafe-meta";
+    metaEl.textContent = cafe.type;
+
+    li.append(nameEl, metaEl);
+
+    li.addEventListener("click", () => {
+      map.flyTo(cafe.marker.getLatLng(), 18);
+      cafe.marker.openPopup();
+    });
+
+    list.appendChild(li);
+  });
+}
+
+// --- Hauptablauf ---
+async function init() {
+  // 1. Beide Dateien parallel laden
+  const [buildingData, cafeData] = await Promise.all([
+    loadJSON("/data/buildings.geojson"),
+    loadJSON("/data/cafes.geojson"),
+  ]);
+
+  // 2. Gebäude aufbereiten
+  const buildings = buildingData.features.filter((f) =>
     ["Polygon", "MultiPolygon"].includes(f.geometry.type),
   );
-  console.log(`${buildings.length} Gebäude geladen`);
-
   const polygons = buildings.flatMap((b) => turf.flatten(b).features);
 
-  // Schatten berechnen
+  // 3. Schatten berechnen
   console.time("Schattenberechnung");
   const shadows = [];
   buildings.forEach((building) => {
@@ -95,34 +131,34 @@ async function loadBuildings() {
     if (shadow) shadows.push(shadow);
   });
   console.timeEnd("Schattenberechnung");
-  console.log(`${shadows.length} Schatten berechnet`);
 
-  // Cafés auf Sonne/Schatten prüfen
+  // 4. Cafés aufbereiten und prüfen
   const isNight = sun.elevation <= 0;
 
-  cafes.forEach((cafe, i) => {
-    const [lat, lng] = cafe.coords;
-    const original = turf.point([lng, lat]);
-    const point = moveOutOfBuilding(original, polygons);
+  const cafes = cafeData.features
+    .filter((f) => f.geometry)
+    .map((f) => {
+      const props = f.properties;
+      const center = f.geometry.type === "Point" ? f : turf.centroid(f);
+      const point = moveOutOfBuilding(
+        turf.point(center.geometry.coordinates),
+        polygons,
+      );
 
-    // Marker auf die verschobene Position setzen (Turf: [lng, lat] → Leaflet: [lat, lng])
-    const [newLng, newLat] = point.geometry.coordinates;
-    cafeMarkers[i].setLatLng([newLat, newLng]);
+      const inShadow =
+        isNight ||
+        shadows.some((shadow) => turf.booleanPointInPolygon(point, shadow));
 
-    const inShadow =
-      isNight ||
-      shadows.some((shadow) => turf.booleanPointInPolygon(point, shadow));
+      return {
+        name: props.name ?? "Unbenannt",
+        type: TYPE_LABELS[props.amenity] ?? props.amenity,
+        outdoor: props.outdoor_seating === "yes",
+        point,
+        inShadow,
+      };
+    });
 
-    const color = inShadow ? "#555" : "#e69500";
-    const fillColor = inShadow ? "#999" : "#ffd54f";
-
-    cafeMarkers[i].setStyle({ color, fillColor, fillOpacity: 0.9 });
-    cafeMarkers[i].setPopupContent(
-      `${cafe.name}<br>${inShadow ? "🌥️ im Schatten" : "☀️ in der Sonne"}`,
-    );
-  });
-
-  // Schatten zeichnen
+  // 5. Schatten zeichnen
   L.geoJSON(turf.featureCollection(shadows), {
     pane: "shadows",
     renderer: shadowRenderer,
@@ -130,7 +166,7 @@ async function loadBuildings() {
     style: { stroke: false, fillColor: "#1a1a2e", fillOpacity: 1 },
   }).addTo(map);
 
-  // Gebäude dezent darüber zeichnen
+  // 6. Gebäude dezent darüber zeichnen
   L.geoJSON(buildings, {
     style: { color: "#666", weight: 1, fillColor: "#ddd", fillOpacity: 0.6 },
     onEachFeature: (feature, layer) => {
@@ -142,7 +178,29 @@ async function loadBuildings() {
     },
   }).addTo(map);
 
-  cafeMarkers.forEach((marker) => marker.bringToFront());
+  // 7. Cafés zeichnen und Marker am Café-Objekt merken
+  cafes.forEach((cafe) => {
+    const [lng, lat] = cafe.point.geometry.coordinates;
+
+    const color = cafe.inShadow ? "#555" : "#e69500";
+    const fillColor = cafe.inShadow ? "#999" : "#ffd54f";
+    const status = cafe.inShadow ? "🌥️ im Schatten" : "☀️ in der Sonne";
+    const outdoorText = cafe.outdoor ? "<br>🪑 Außenplätze" : "";
+
+    cafe.marker = L.circleMarker([lat, lng], {
+      radius: 4,
+      color,
+      fillColor,
+      fillOpacity: 0.6,
+    })
+      .bindPopup(
+        `<b>${cafe.name}</b> (${cafe.type})<br>${status}${outdoorText}`,
+      )
+      .addTo(map);
+  });
+
+  // 8. Liste füllen
+  renderList(cafes);
 }
 
-loadBuildings();
+init();
