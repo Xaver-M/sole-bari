@@ -1,0 +1,14 @@
+{
+  "last_release": "2026-11-18.0",
+  "last_run": "2026-11-24T17:30:52.258101+00:00",
+  "theme": "buildings",
+  "type": "building",
+  "bbox": {
+    "xmin": 16.848,
+    "ymin": 41.112,
+    "xmax": 16.89,
+    "ymax": 41.142
+  },
+  "backend": "geojson",
+  "output": "C:\\Users\\xaver\\Desktop\\Projekte\\sole-bari\\overture-buildings.geojson"
+}
